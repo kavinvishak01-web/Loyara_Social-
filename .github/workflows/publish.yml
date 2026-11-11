@@ -1,0 +1,88 @@
+name: Publish post
+
+# The Claude routine writes the post + poster and pushes them (data/pending.json).
+# This workflow picks them up and posts to Threads (and LinkedIn when due), using the
+# tokens stored in GitHub Secrets. The tokens never leave GitHub.
+on:
+  push:
+    branches: ["**"]
+    paths: ["data/pending.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+      THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+      LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+      LINKEDIN_AUTHOR_URN: ${{ secrets.LINKEDIN_AUTHOR_URN }}
+      GH_TOKEN: ${{ github.token }}
+      SRC_BRANCH: ${{ github.ref_name }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Bring the new post onto main
+        id: bring
+        run: |
+          git config user.name "loyara-bot"
+          git config user.email "loyara-bot@users.noreply.github.com"
+          if [ "$SRC_BRANCH" != "main" ]; then
+            git fetch origin "$SRC_BRANCH"
+            git checkout "origin/$SRC_BRANCH" -- data/pending.json || true
+            if [ -f data/pending.json ]; then
+              for P in $(python3 -c 'import json;d=json.load(open("data/pending.json"));print(" ".join(x for x in [d["poster"], d.get("linkedin_poster")] if x))'); do
+                git checkout "origin/$SRC_BRANCH" -- "$P"
+              done
+            fi
+          fi
+          if [ ! -f data/pending.json ]; then echo "Nothing to publish."; echo "skip=1" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git add data posters
+          git commit -m "New post $(date -u +%F)" || true
+          git push origin main
+          echo "POSTER_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+
+      - name: Post to Threads (and LinkedIn on Mon/Wed/Fri)
+        if: steps.bring.outputs.skip != '1'
+        run: |
+          sleep 15   # let GitHub serve the new poster image
+          python -m agent.main publish
+
+      - name: Update performance numbers
+        if: always() && steps.bring.outputs.skip != '1'
+        continue-on-error: true
+        run: python -m agent.main refresh-metrics
+
+      - name: Save history
+        if: always() && steps.bring.outputs.skip != '1'
+        run: |
+          git add -A data
+          git commit -m "Posted $(date -u +%F)" || true
+          git push origin main
+          if [ "$SRC_BRANCH" != "main" ]; then git push origin --delete "$SRC_BRANCH" || true; fi
+
+      - name: Email me if it failed
+        if: failure()
+        run: |
+          gh issue create --title "Post failed $(date -u +%F)" \
+            --body "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          $(cat data/last_failure.txt 2>/dev/null)"

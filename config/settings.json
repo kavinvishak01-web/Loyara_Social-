@@ -1,0 +1,47 @@
+{
+  "brand_name": "Loyara Agency",
+  "website": "https://loyaraagency.com",
+  "contact_path": "/contact/",
+  "packages_path": "/packages/",
+  "blog_feed": "/blog/feed.xml",
+  "whatsapp_number": "",
+  "whatsapp_message": "Hi Loyara, I saw your post and want a free consultation.",
+  "language": "English",
+  "pages_to_read": ["/", "/packages/", "/about/"],
+
+  "slots": {
+    "morning": {
+      "ist": "08:30",
+      "focus": "Get leads. Pick a problem a business owner feels today (no enquiries, inconsistent posting, ads that burn money, a website that doesn't convert), show you understand it with one sharp insight, and point to the fix: a free consultation with Loyara.",
+      "pillars": ["pain_point", "website", "mistakes", "meta_ads", "myth", "local"]
+    },
+    "evening": {
+      "ist": "19:30",
+      "focus": "Drive website traffic and enquiries. When a fresh blog article is given, tease its most useful takeaways and send people to read it. Otherwise make a direct, friendly offer or a strong opinion that makes people want to talk to us.",
+      "pillars": ["blog_traffic", "offer", "pain_point", "website"]
+    }
+  },
+
+  "pillars": [
+    {"id": "pain_point",   "label": "Problem → fix (lead magnet)",  "service": "social",   "poster": "hook"},
+    {"id": "website",      "label": "Website that converts",       "service": "websites", "poster": "list"},
+    {"id": "mistakes",     "label": "Mistakes costing you leads",  "service": "social",   "poster": "list"},
+    {"id": "meta_ads",     "label": "Meta Ads for enquiries",      "service": "meta_ads", "poster": "compare"},
+    {"id": "myth",         "label": "Myth vs fact",                "service": "websites", "poster": "compare"},
+    {"id": "local",        "label": "Chennai business angle",      "service": "social",   "poster": "hook"},
+    {"id": "offer",        "label": "Direct offer",                "service": "packages", "poster": "offer"},
+    {"id": "blog_traffic", "label": "Blog teaser (send traffic)",  "service": "blog",     "poster": "list"}
+  ],
+
+  "linkedin": {
+    "enabled": true,
+    "days": ["Mon", "Wed", "Fri"],
+    "slot": "morning",
+    "api_version": "202610",
+    "angles": {
+      "Mon": {"id": "li_problem", "label": "Problem → solution", "brief": "Name a costly problem business owners have (no consistent content, no enquiries from social, a website that doesn't convert, ads wasting money). Explain why it happens, how Loyara fixes it (from the fact sheet), and invite them to book a free consultation.", "poster": "compare", "link": "contact"},
+      "Wed": {"id": "li_service", "label": "Service spotlight", "brief": "Spotlight ONE service or package (rotate: Growth plan, Elite plan, Starter plan, websites, Meta Ads, brand identity). Say exactly what's included, who it's for and the result it's built for, with the price from the fact sheet (no INR prices for websites aimed at international readers). Close with a clear call to book.", "poster": "offer", "link": "packages"},
+      "Fri": {"id": "li_process", "label": "How we work / trust", "brief": "Remove the fear of hiring an agency: show how Loyara works (free consultation, approved calendar, content days, reporting, 50/50 payment) and why that protects the client. End with a direct invitation to book a free consultation or DM.", "poster": "list", "link": "contact"}
+    }
+  }
+}

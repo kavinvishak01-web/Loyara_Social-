@@ -1,0 +1,106 @@
+[
+  {
+    "slot": "morning",
+    "pillar": "tip",
+    "text": "Your phone can shoot a reel that sells. The problem is what you point it at.\n\nFor a Chennai restaurant, film these first:\n→ the tawa hitting the flame\n→ the first bite, close up\n→ a regular's honest 5-second reaction\n\nPeople don't buy food. They buy the moment before eating it.\n\nWhat's the one shot your customers always photograph?",
+    "reply_text": "Want us to plan and shoot these for you? We book a content day at your restaurant and handle the rest.",
+    "topic_tag": "Small Business",
+    "poster": {
+      "layout": "list",
+      "eyebrow": "Reels",
+      "headline": "3 shots every restaurant reel needs",
+      "items": [
+        "The tawa hitting the flame",
+        "The first bite, up close",
+        "A regular's 5-second reaction"
+      ],
+      "cta": "Book a free consultation"
+    }
+  },
+  {
+    "slot": "afternoon",
+    "pillar": "website",
+    "text": "A customer finds you on Instagram. Loves the reels. Taps the link in bio.\n\nIt opens a slow page with no prices, no clear button and a 2019 offer.\n\nThey're gone.\n\nYour website isn't a brochure. It's where the trust you built on social gets turned into an enquiry.\n\nWhen did you last open your own site on your phone?",
+    "reply_text": "We build landing pages, business sites and online stores for businesses anywhere in the world. Message us for a quote.",
+    "topic_tag": "Web Design",
+    "poster": {
+      "layout": "hook",
+      "eyebrow": "Websites",
+      "headline": "Your reels build trust. Your website loses it.",
+      "subline": "The link in bio is where enquiries are won or lost.",
+      "cta": "Get a website quote"
+    }
+  },
+  {
+    "slot": "evening",
+    "pillar": "hot_take",
+    "text": "Hot take: posting every day won't save a business with no plan.\n\n30 random posts a month is noise.\n12 planned posts, each with a job (build trust, show the product, ask for the enquiry) is a system.\n\nThat's why we make every client approve a monthly content calendar before we shoot anything.\n\nDo you plan your posts, or post when there's time?",
+    "reply_text": "If you want a calendar planned, shot and posted for you, start with a free consultation.",
+    "topic_tag": "Digital Marketing",
+    "poster": {
+      "layout": "compare",
+      "eyebrow": "Hot take",
+      "headline": "Posting daily is not a strategy.",
+      "left_label": "Posting when there's time",
+      "left_text": "Random posts, no goal, inconsistent weeks.",
+      "right_label": "A planned calendar",
+      "right_text": "Every post has a job: trust, product, enquiry.",
+      "cta": "Book a free consultation"
+    }
+  },
+  {
+    "slot": "morning",
+    "pillar": "mistakes",
+    "text": "4 Instagram mistakes that quietly kill enquiries for Chennai businesses:\n\n1. Bio says what you are, not what you do for the customer\n2. No price hint anywhere, so people assume it's expensive\n3. Reels with no face, no voice, no story\n4. Comments left unanswered for days\n\nFix #4 today. It's free and it works.\n\nWhich one is your account guilty of?",
+    "reply_text": "Want a second pair of eyes on your page? Book a free consultation and we'll walk you through it.",
+    "topic_tag": "Instagram Marketing",
+    "poster": {
+      "layout": "list",
+      "eyebrow": "Mistakes",
+      "headline": "4 Instagram mistakes killing your enquiries",
+      "items": [
+        "A bio about you, not the customer",
+        "No price hint anywhere",
+        "Reels with no face or story",
+        "Comments left unanswered"
+      ],
+      "cta": "Book a free consultation"
+    }
+  },
+  {
+    "slot": "afternoon",
+    "pillar": "meta_ads",
+    "text": "\"I boosted a post for ₹2,000 and got nothing.\"\n\nSound familiar? The boost button isn't really advertising.\n\nA real Meta Ads campaign has:\n• a goal (enquiries, not likes)\n• an audience you chose on purpose\n• 2-3 creatives tested against each other\n• someone checking it every week\n\nSame budget. Very different results.\n\nHave you ever boosted a post? What happened?",
+    "reply_text": "Meta Ads management is included in our Growth and Elite plans. Book a free consultation to see if it fits.",
+    "topic_tag": "Meta Ads",
+    "poster": {
+      "layout": "compare",
+      "eyebrow": "Meta Ads",
+      "headline": "Boosting a post is not running ads.",
+      "left_label": "Boost button",
+      "left_text": "Pick a post, pay, hope the right people see it.",
+      "right_label": "Real Meta Ads",
+      "right_text": "A clear goal, a chosen audience, tested creatives, weekly tuning.",
+      "cta": "Talk to us about ads"
+    }
+  },
+  {
+    "slot": "evening",
+    "pillar": "offer",
+    "text": "Running a business and running its Instagram are two full-time jobs.\n\nOur Growth plan takes the second one off your plate:\n→ 8 professional reels shot at your business\n→ posts, carousels and motion posters\n→ Meta Ads to bring in enquiries\n→ a monthly report so you see what worked\n\nYou approve the calendar. We do the rest.\n\nDM us \"GROWTH\" and we'll explain how it works.",
+    "reply_text": "Full package details and pricing are on our packages page.",
+    "topic_tag": "Chennai",
+    "poster": {
+      "layout": "offer",
+      "eyebrow": "Growth plan",
+      "headline": "You run the business. We run the feed.",
+      "price": "₹19,999/mo",
+      "items": [
+        "8 reels shot at your business",
+        "Meta Ads + monthly report",
+        "A calendar you approve first"
+      ],
+      "cta": "Book a free consultation"
+    }
+  }
+]
