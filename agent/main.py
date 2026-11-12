@@ -64,6 +64,36 @@ def pick_pillar(settings: Dict, slot: str, items: List[Dict], unavailable: set) 
     return pillars[min(last_used, key=last_used.get)]
 
 
+def pick_linkedin_angle(li: Dict, items: List[Dict], force: Optional[str], settings: Dict):
+    """Alternate sales / educational day by day; within a type, use the least recently used angle."""
+    from .website import latest_blog_posts
+
+    posted = [p for p in items if p.get("linkedin_urn")]
+    if force:
+        kind = force
+    elif not posted:
+        kind = "sales"
+    else:  # posts from before this change have no type; they were sales posts
+        kind = "education" if posted[-1].get("linkedin_type", "sales") == "sales" else "sales"
+
+    li_blog = None
+    shared = {p.get("linkedin_blog_url") for p in items}
+    options = []
+    for a in li["angles"][kind]:
+        if a["link"] == "blog":
+            li_blog = next((b for b in latest_blog_posts(settings["website"], settings["blog_feed"])
+                            if b["url"] not in shared), None)
+            if not li_blog:
+                continue  # no new article to teach from yet
+        options.append(a)
+    if not options:
+        return None, None
+    last_used = {a["id"]: max((i for i, p in enumerate(posted) if p.get("linkedin_angle") == a["id"]),
+                              default=-1) for a in options}
+    angle = dict(min(options, key=lambda a: last_used[a["id"]]), type=kind)
+    return angle, (li_blog if angle["link"] == "blog" else None)
+
+
 def tracked(url: str, source: str, campaign: str, key: str) -> str:
     sep = "&" if "?" in url else "?"
     return url + sep + urlencode({"utm_source": source, "utm_medium": "social",
@@ -99,18 +129,16 @@ def brief(slot: str, force_linkedin: Optional[str] = None) -> None:
         blog = None
 
     li = settings.get("linkedin", {})
-    weekday = now.strftime("%a")
-    angle = li.get("angles", {}).get(weekday)
-    linkedin_due = bool(li.get("enabled")) and slot == li.get("slot") and weekday in li.get("days", []) \
-        and angle is not None
-    if force_linkedin:  # manual test: write a LinkedIn post today using that day's angle
-        weekday, angle = force_linkedin, li["angles"][force_linkedin]
-        linkedin_due = True
+    linkedin_due = bool(li.get("enabled")) and (slot == li.get("slot") or bool(force_linkedin))
+    angle, li_blog = (pick_linkedin_angle(li, items, force_linkedin, settings) if linkedin_due
+                      else (None, None))
+    linkedin_due = linkedin_due and angle is not None
 
     DATA.mkdir(exist_ok=True)
     BRIEF.write_text(json.dumps({"key": key, "slot": slot, "pillar": pillar["id"],
                                  "blog": blog, "linkedin_due": linkedin_due,
-                                 "linkedin_angle": angle if linkedin_due else None}, indent=2))
+                                 "linkedin_angle": angle if linkedin_due else None,
+                                 "linkedin_blog": li_blog}, indent=2))
     blank_poster = {k: ([] if k == "items" else "") for k in POSTER_KEYS}
     template = {"threads_text": "", "threads_reply": "", "topic_tag": "",
                 "poster": {**blank_poster, "layout": pillar["poster"]}}
@@ -126,11 +154,15 @@ def brief(slot: str, force_linkedin: Optional[str] = None) -> None:
                      f"{read_article(blog['url'])}\n")
     li_part = ""
     if linkedin_due:
-        recent_li = [p["linkedin_hook"] for p in items if p.get("linkedin_hook")][-12:]
-        li_part = (f"\n## LinkedIn post due today: YES ({weekday}: {angle['label']}, SALES focus)\n"
+        recent_li = [p["linkedin_hook"] for p in items if p.get("linkedin_hook")][-14:]
+        kind = "SALES PITCH" if angle["type"] == "sales" else "EDUCATIONAL (teach, don't sell)"
+        li_part = (f"\n## LinkedIn post due today: YES ({kind}: {angle['label']})\n"
                    f"{angle['brief']}\nThis is a separate topic from the Threads post, with its own poster "
-                   f"(suggested layout: {angle['poster']}).\nRecent LinkedIn openings. Don't repeat:\n"
-                   + "\n".join(f"- {h}" for h in recent_li) + "\n")
+                   f"(suggested layout: {angle['poster']}).\n")
+        if li_blog:
+            li_part += (f"\nBlog article to teach from: {li_blog['title']} ({li_blog['url']}. The link is "
+                        f"added automatically)\n{read_article(li_blog['url'])}\n")
+        li_part += "Recent LinkedIn openings. Don't repeat:\n" + "\n".join(f"- {h}" for h in recent_li) + "\n"
     print(f"""# BRIEF {key}
 Today: {now.strftime('%A, %d %B %Y')} (India). Slot: {slot}, goes live about {s['ist']} IST.
 
@@ -224,7 +256,8 @@ def build() -> None:
     if b["linkedin_due"]:
         a = b["linkedin_angle"]
         pend["linkedin_poster"] = f"posters/{key}-linkedin.png"
-        pend["linkedin_link"] = cta_link(settings, a["link"], a["id"], key, "linkedin")
+        pend["linkedin_link"] = cta_link(settings, a["link"], a["id"], key, "linkedin",
+                                         (b.get("linkedin_blog") or {}).get("url"))
     pend["created_at"] = datetime.now(IST).isoformat()
     _render_all(pend, settings["website"])
     PENDING.write_text(json.dumps(pend, indent=2, ensure_ascii=False))
@@ -331,6 +364,8 @@ def _post_linkedin(settings: Dict, post: Dict, pend: Dict, record: Dict, failure
                 img = li.upload_image(ROOT / pend["linkedin_poster"])
                 urn = li.post(li_text, img, post["linkedin_poster"]["headline"])
                 record.update({"linkedin_urn": urn, "linkedin_angle": pend["linkedin_angle"]["id"],
+                               "linkedin_type": pend["linkedin_angle"].get("type", "sales"),
+                               "linkedin_blog_url": (pend.get("linkedin_blog") or {}).get("url"),
                                "linkedin_hook": li_text.split("\n")[0][:140]})
                 print("LinkedIn posted:", urn)
                 try:
@@ -345,8 +380,8 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("command", choices=["brief", "build", "rerender", "publish", "refresh-metrics"])
     ap.add_argument("--slot", choices=["morning", "evening"])
-    ap.add_argument("--linkedin", choices=["Mon", "Wed", "Fri"],
-                    help="test only: force a LinkedIn post today using that day's angle")
+    ap.add_argument("--linkedin", choices=["sales", "education"],
+                    help="test only: force a LinkedIn post of this type in any slot")
     a = ap.parse_args()
     if a.command == "brief":
         brief(a.slot or current_slot(), a.linkedin)

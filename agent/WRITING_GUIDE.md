@@ -44,18 +44,20 @@ Likes are only useful if they lead to an enquiry or a click.
   "Book a free consultation:"). The link is appended automatically.
 - `topic_tag`: one Threads topic, 1-3 words, no # (e.g. "Small Business", "Web Design", "Chennai").
 
-## LinkedIn (Mon/Wed/Fri): sales
-- Its own topic, set by the day's angle in the brief, with its own poster (`linkedin_poster`).
+## LinkedIn (every day, alternating: one day a SALES PITCH, the next day EDUCATIONAL)
+- Its own topic, set by the angle in the brief, with its own poster (`linkedin_poster`).
 - Written in first person as Kavin Vishak M, Creative Director at Loyara Agency ("At Loyara, we...", "I think...").
   This is where his voice matters most: like Kavin explaining it to a business owner over coffee.
-  It's a sales post, but it should feel helpful and honest, not pushy. CTAs sound human
-  ("Let's talk.", "Tell me what you're working on.").
-- Structure: a hook under 15 words → the problem in the reader's words → what Loyara does about it
-  (specific deliverables and prices from the fact sheet) → who it's for → one clear call to action
-  (book a free consultation / DM me). Short paragraphs of 1-2 lines; a small arrow or numbered list is welcome.
-- 800-1,500 characters. Then a blank line and 3 hashtags in CamelCase, no underscores
-  (e.g. #DigitalMarketing #SmallBusiness #ChennaiBusiness).
-- `linkedin_comment`: one short line for the first comment that leads into the link. The link is appended automatically.
+- **Sales pitch days:** a hook under 15 words → the problem in the reader's words → what Loyara does about
+  it (specific deliverables and prices from the fact sheet) → who it's for → one clear, human call to action
+  ("Let's talk.", "Tell me what you're working on."). Helpful and honest, not pushy.
+- **Educational days:** teach one thing properly: a hook → why it matters → the steps or explanation with a
+  simple example → a takeaway. No pitch, no prices. At most one soft closing line (e.g. "This is the kind of
+  thing we do for clients at Loyara."). The goal is trust and reach, so people remember Kavin when they need help.
+- Short paragraphs of 1-2 lines; a small arrow or numbered list is welcome. 800-1,500 characters.
+  Then a blank line and 3 hashtags in CamelCase, no underscores (e.g. #DigitalMarketing #SmallBusiness #AIMarketing).
+- `linkedin_comment`: one short line for the first comment that leads into the link (consultation on sales
+  days, the article or a free consultation on educational days). The link is appended automatically.
 
 ## Posters
 - A poster restates the core idea at a glance. Don't repeat the full text.
