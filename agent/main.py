@@ -321,7 +321,9 @@ def _post_linkedin(settings: Dict, post: Dict, pend: Dict, record: Dict, failure
     if li_text and li_cfg.get("enabled"):
         token, author = os.environ.get("LINKEDIN_ACCESS_TOKEN"), os.environ.get("LINKEDIN_AUTHOR_URN")
         if not (token and author):
-            print("LinkedIn skipped: LINKEDIN_ACCESS_TOKEN / LINKEDIN_AUTHOR_URN secrets not set")
+            missing = [n for n, v in [("LINKEDIN_ACCESS_TOKEN", token), ("LINKEDIN_AUTHOR_URN", author)] if not v]
+            failures.append("LinkedIn: secret(s) not visible to GitHub Actions: " + ", ".join(missing)
+                            + ". Add them under Settings → Secrets and variables → Actions → Repository secrets.")
         else:
             from .linkedin_api import LinkedIn, LinkedInError
             li = LinkedIn(token, author, li_cfg.get("api_version", "202610"))
