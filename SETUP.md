@@ -5,17 +5,17 @@
   - 8:30 AM: lead posts (a business problem, then the fix, then a free consultation).
   - 7:30 PM: traffic posts. When the 6 PM blog routine has published a new article, this post teases it and
     links to it. Otherwise it's a direct offer.
-- **LinkedIn, Mon/Wed/Fri at 8:30 AM.** Sales posts:
-  - Mon: problem → solution.
-  - Wed: service/package spotlight.
-  - Fri: how we work (trust).
+- **LinkedIn, every day at 8:30 AM**, alternating:
+  - one day a **sales pitch** (problem → solution, a service/package spotlight, or how we work),
+  - the next day an **educational** post (a practical tip, a website/Meta Ads lesson, AI in marketing, or
+    lessons from the latest blog article).
 - **The website blog is unchanged.** Your existing 6 PM routine keeps running on its own.
 
 Every post gets a branded poster and a tracked link. It runs fully in the cloud, so your laptop can stay off.
 
 **Cost:** ₹0 extra. Opus 5.5 writes the posts through your Claude Pro plan, as a routine like your blog.
-That's 3 of Pro's 5 routine runs a day: blog 1 + Threads 2. LinkedIn is written in the Monday,
-Wednesday and Friday morning run, so it uses no extra runs.
+That's 3 of Pro's 5 routine runs a day: blog 1 + Threads 2. LinkedIn is written in the morning run,
+so it uses no extra runs.
 
 ## How it works
 
@@ -114,7 +114,7 @@ Test runs count towards the 5 runs a day.
 - **Logo:** save a white/transparent PNG as `assets/logo.png`.
 - **WhatsApp:** set `"whatsapp_number": "91XXXXXXXXXX"` in `config/settings.json`. Social and ads posts
   will then link to WhatsApp.
-- **LinkedIn days and topics:** `"linkedin" → "days"` and `"angles"` in `config/settings.json`.
+- **LinkedIn topics:** `"linkedin" → "angles"` (sales / education) in `config/settings.json`.
 - **Threads topics:** `"slots"` and `"pillars"` in `config/settings.json`.
 - **If a post fails:** GitHub opens an issue and emails you with the error.
 
