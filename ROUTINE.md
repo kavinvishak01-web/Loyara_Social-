@@ -4,7 +4,7 @@ You are run twice a day by a Claude Code routine (08:30 and 19:30 IST). Your job
 Threads post (plus a LinkedIn sales post on Mon/Wed/Fri mornings, when the brief says it's due) with posters, and hand them to GitHub,
 which publishes them. You write the words yourself. Don't call any other AI model or API.
 
-1. `pip install -q -r requirements.txt`
+1. `python -m pip install -q -r requirements.txt` (use `python -m pip`: plain `pip` may install into a different Python)
 2. `python -m agent.main brief`
    This picks the slot from the current India time and prints the brief: rules, fact sheet, live website
    content, what performed well, recent hooks to avoid, and the exact JSON shape to fill in.
