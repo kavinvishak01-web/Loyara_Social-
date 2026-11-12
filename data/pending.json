@@ -1,0 +1,52 @@
+{
+  "key": "20261112-morning",
+  "slot": "morning",
+  "pillar": "pain_point",
+  "blog": null,
+  "linkedin_due": true,
+  "linkedin_angle": {
+    "id": "li_problem",
+    "label": "Problem → solution",
+    "brief": "Name a costly problem business owners have (no consistent content, no enquiries from social, a website that doesn't convert, ads wasting money). Explain why it happens, how Loyara fixes it (from the fact sheet), and invite them to book a free consultation.",
+    "poster": "compare",
+    "link": "contact"
+  },
+  "post": {
+    "threads_text": "Boosting a post is not the same as running ads.\n\nA cafe in Anna Nagar boosts a nice reel. It gets likes, a few new followers, and zero table bookings.\n\nBecause the boost was set up for reach, not enquiries.\n\nSo before you spend more, ask one thing: what should someone do right after seeing this ad? Call? Message? Book?\n\nIf you can't answer that, your ad can't either.\n\nBook a free consultation (link in the reply).",
+    "threads_reply": "Let's look at your ads together. Book a free consultation:",
+    "topic_tag": "Meta Ads",
+    "poster": {
+      "layout": "hook",
+      "eyebrow": "Meta Ads",
+      "headline": "Likes don't pay rent. Enquiries do.",
+      "subline": "Before you boost, decide what someone should do after seeing your ad.",
+      "items": [],
+      "left_label": "",
+      "left_text": "",
+      "right_label": "",
+      "right_text": "",
+      "price": "",
+      "cta": "Book a free consultation"
+    },
+    "linkedin_text": "Most business owners don't have a content problem. They have a time problem.\n\nYou know you should post. You even have ideas. But the shop gets busy, customers walk in, and suddenly it's been three weeks since your last reel.\n\nThat's the real cost. People check your page before they visit or call. A quiet feed makes them wonder if you're still active.\n\nSo at Loyara, we take the \"when there's time\" part out of it:\n\n→ We plan a monthly content calendar, and you approve it before anything is made\n→ We book content days in advance and shoot the reels at your business\n→ We write the captions, research hashtags and schedule everything\n\nOur Starter package is ₹15,999/month: 8 reels, 4 static posts and 8 story designs, with 2 content days. If you also want enquiries from ads, Growth (₹19,999/month) adds Meta Ads management and a monthly performance report.\n\nThis is for businesses in Chennai and across Tamil Nadu who are really good at what they do, but just don't have the hours to show it online.\n\nIf that sounds like you, book a free consultation. Tell me about your business and I'll honestly tell you what fits.\n\n#DigitalMarketing #SmallBusiness #ChennaiBusiness",
+    "linkedin_comment": "Book a free consultation with us here:",
+    "linkedin_poster": {
+      "layout": "compare",
+      "eyebrow": "Social media",
+      "headline": "Stop posting only when there's time",
+      "subline": "",
+      "items": [],
+      "left_label": "Without a plan",
+      "left_text": "Posts when the shop is quiet. Weeks of silence.",
+      "right_label": "With Loyara",
+      "right_text": "Approved calendar, booked shoot days, posts on schedule.",
+      "price": "",
+      "cta": "Book a free consultation"
+    }
+  },
+  "poster": "posters/20261112-morning.png",
+  "threads_link": "https://loyaraagency.com/contact/?utm_source=threads&utm_medium=social&utm_campaign=pain_point&utm_content=20261112-morning",
+  "linkedin_poster": "posters/20261112-morning-linkedin.png",
+  "linkedin_link": "https://loyaraagency.com/contact/?utm_source=linkedin&utm_medium=social&utm_campaign=li_problem&utm_content=20261112-morning",
+  "created_at": "2026-11-12T18:27:27.088271+05:30"
+}
