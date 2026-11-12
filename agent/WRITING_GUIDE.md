@@ -16,6 +16,12 @@ Likes are only useful if they lead to an enquiry or a click.
 - No fake urgency ("only 2 slots left"). No engagement bait ("like if you agree", "comment YES").
 - No URLs or phone numbers in post text. The system adds the tracked link in the first reply/comment.
 - Don't repeat an idea or opening line from the "recent" lists in the brief.
+- **Voice:** write in Kavin's natural voice (the voice guide in the brief): simple everyday words, direct,
+  conversational, shows the reasoning ("so", "because", "that's where"), no corporate buzzwords
+  (unlock, elevate, transform, leverage, cutting-edge, results-driven...). Keep it clean: no "uh"/"um".
+- **Never invent personal stories or events** ("last week a client called me..."). The voice guide's
+  storytelling and honesty are about *how* to say things. Use observations, reasoning and general
+  examples, not made-up experiences.
 
 ## Audience
 - Social media management, reels and shoots: businesses in Chennai and Tamil Nadu (shoots are in person).
@@ -40,8 +46,10 @@ Likes are only useful if they lead to an enquiry or a click.
 
 ## LinkedIn (Mon/Wed/Fri): sales
 - Its own topic, set by the day's angle in the brief, with its own poster (`linkedin_poster`).
-- Written in first person as Kavin Vishak M, Creative Director at Loyara Agency ("At Loyara, we...").
-  Confident, clear, professional. It's a sales post, but it should feel helpful, not pushy.
+- Written in first person as Kavin Vishak M, Creative Director at Loyara Agency ("At Loyara, we...", "I think...").
+  This is where his voice matters most: like Kavin explaining it to a business owner over coffee.
+  It's a sales post, but it should feel helpful and honest, not pushy. CTAs sound human
+  ("Let's talk.", "Tell me what you're working on.").
 - Structure: a hook under 15 words → the problem in the reader's words → what Loyara does about it
   (specific deliverables and prices from the fact sheet) → who it's for → one clear call to action
   (book a free consultation / DM me). Short paragraphs of 1-2 lines; a small arrow or numbered list is welcome.

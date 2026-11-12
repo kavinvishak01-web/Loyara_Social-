@@ -138,6 +138,9 @@ Content pillar: {pillar['label']}. Suggested poster layout: {pillar['poster']}.
 ## Rules
 {(ROOT / 'agent' / 'WRITING_GUIDE.md').read_text()}
 
+## Kavin's voice (how every post should sound)
+{(ROOT / 'config' / 'voice.md').read_text()}
+
 ## Fact sheet (the only facts you may state about Loyara)
 {(ROOT / 'config' / 'business.md').read_text()}
 
