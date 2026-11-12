@@ -83,7 +83,7 @@ def cta_link(settings: Dict, kind: str, campaign: str, key: str, source: str,
 
 
 # ---------------------------------------------------------------- routine side
-def brief(slot: str) -> None:
+def brief(slot: str, force_linkedin: Optional[str] = None) -> None:
     from .website import latest_blog_posts, read_article, read_site
 
     settings = load_settings()
@@ -103,6 +103,9 @@ def brief(slot: str) -> None:
     angle = li.get("angles", {}).get(weekday)
     linkedin_due = bool(li.get("enabled")) and slot == li.get("slot") and weekday in li.get("days", []) \
         and angle is not None
+    if force_linkedin:  # manual test: write a LinkedIn post today using that day's angle
+        weekday, angle = force_linkedin, li["angles"][force_linkedin]
+        linkedin_due = True
 
     DATA.mkdir(exist_ok=True)
     BRIEF.write_text(json.dumps({"key": key, "slot": slot, "pillar": pillar["id"],
@@ -241,6 +244,8 @@ def rerender() -> None:
 def refresh_metrics(items: List[Dict], days: int = 21) -> None:
     from .threads_api import Threads, ThreadsError
 
+    if not os.environ.get("THREADS_ACCESS_TOKEN"):
+        return
     api = Threads(os.environ["THREADS_ACCESS_TOKEN"], os.environ.get("THREADS_USER_ID") or "me")
     cutoff = datetime.now(IST) - timedelta(days=days)
     for p in items:
@@ -272,7 +277,27 @@ def publish() -> None:
               "posted_at": datetime.now(IST).isoformat(), "metrics": {}}
     failures = []
 
-    api = Threads(os.environ["THREADS_ACCESS_TOKEN"], os.environ.get("THREADS_USER_ID") or "me")
+    threads_token = os.environ.get("THREADS_ACCESS_TOKEN")
+    if not threads_token:
+        print("Threads skipped: THREADS_ACCESS_TOKEN secret not set yet")
+    else:
+        _post_threads(Threads(threads_token, os.environ.get("THREADS_USER_ID") or "me"),
+                      post, pend, record, failures, ThreadsError)
+
+    _post_linkedin(settings, post, pend, record, failures)
+
+    if record.get("media_id") or record.get("linkedin_urn"):
+        items = history.load()
+        items.append(record)
+        history.save(items)
+        PENDING.unlink()
+    if failures:
+        (DATA / "last_failure.txt").write_text("\n".join(failures))
+        print("FAILED:\n" + "\n".join(failures))
+        sys.exit(1)
+
+
+def _post_threads(api, post: Dict, pend: Dict, record: Dict, failures: List[str], ThreadsError) -> None:
     try:
         media_id = api.post_image(post["threads_text"], image_url(pend["poster"]),
                                   post.get("topic_tag") or None)
@@ -289,6 +314,8 @@ def publish() -> None:
     except ThreadsError as e:
         failures.append(f"Threads: {e}")
 
+
+def _post_linkedin(settings: Dict, post: Dict, pend: Dict, record: Dict, failures: List[str]) -> None:
     li_text = (post.get("linkedin_text") or "").strip()
     li_cfg = settings.get("linkedin", {})
     if li_text and li_cfg.get("enabled"):
@@ -311,24 +338,16 @@ def publish() -> None:
             except LinkedInError as e:
                 failures.append(f"LinkedIn: {e}")
 
-    if record.get("media_id") or record.get("linkedin_urn"):
-        items = history.load()
-        items.append(record)
-        history.save(items)
-        PENDING.unlink()
-    if failures:
-        (DATA / "last_failure.txt").write_text("\n".join(failures))
-        print("FAILED:\n" + "\n".join(failures))
-        sys.exit(1)
-
 
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("command", choices=["brief", "build", "rerender", "publish", "refresh-metrics"])
     ap.add_argument("--slot", choices=["morning", "evening"])
+    ap.add_argument("--linkedin", choices=["Mon", "Wed", "Fri"],
+                    help="test only: force a LinkedIn post today using that day's angle")
     a = ap.parse_args()
     if a.command == "brief":
-        brief(a.slot or current_slot())
+        brief(a.slot or current_slot(), a.linkedin)
     elif a.command == "build":
         build()
     elif a.command == "rerender":
