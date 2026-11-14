@@ -1,0 +1,65 @@
+{
+  "key": "20261114-morning",
+  "slot": "morning",
+  "pillar": "mistakes",
+  "blog": null,
+  "linkedin_due": true,
+  "linkedin_angle": {
+    "id": "li_service",
+    "label": "Service spotlight",
+    "brief": "Spotlight ONE service or package (rotate: Growth plan, Elite plan, Starter plan, websites, Meta Ads, brand identity). Say exactly what's included, who it's for and the result it's built for, with the price from the fact sheet (no INR prices for websites aimed at international readers). Close with a clear call to book.",
+    "poster": "offer",
+    "link": "packages",
+    "type": "sales"
+  },
+  "linkedin_blog": null,
+  "post": {
+    "threads_text": "Your reels get views. So why are the DMs empty?\n\nUsually it's not the content. It's the profile people land on after the reel.\n\n→ The bio doesn't say what you sell or where you are\n→ There's no clear way to book or order\n→ The last post is three weeks old\n→ The reel ends without telling people what to do next\n\nA boutique in T. Nagar can fix all four this week.\n\nWant us to look at yours? Book a free consultation (link in the reply).",
+    "threads_reply": "Book a free consultation with us here:",
+    "topic_tag": "Instagram Marketing",
+    "poster": {
+      "layout": "list",
+      "eyebrow": "Lost leads",
+      "headline": "Views but no DMs? Check your profile.",
+      "subline": "",
+      "items": [
+        "Bio doesn't say what or where",
+        "No clear way to book",
+        "Last post is weeks old",
+        "Reels end without a next step"
+      ],
+      "left_label": "",
+      "left_text": "",
+      "right_label": "",
+      "right_text": "",
+      "price": "",
+      "cta": "Book a free consultation"
+    },
+    "linkedin_text": "Posting is not the hard part. Turning those posts into enquiries is.\n\nMaybe this sounds familiar. \"We're on Instagram. People like the reels. But the phone doesn't ring more.\"\n\nAnd that makes sense. Because good content alone mostly builds attention. To get enquiries, the right local people need to see it, and they need a clear reason to message you.\n\nSo that's why we built the Growth plan at Loyara. It puts the content and the ads in one monthly plan.\n\nHere's what's included, every month:\n→ 8 professional reels, shot at your business on 2 content days\n→ 4 static posts, 2 motion posters and 2 carousels\n→ Monthly content calendar you approve before we shoot\n→ Captions, hashtag research and scheduling\n→ Meta Ads management on Facebook and Instagram, set up to bring enquiries\n→ A monthly performance report and 2 strategy calls\n\nIt's ₹19,999/month. Ad spend is paid by you directly to Meta, so you always see exactly where that money goes.\n\nWho is it for? Chennai and Tamil Nadu businesses that already know what they sell and now want steady leads. A clinic, a cafe, a showroom, a salon.\n\nIf that sounds like you, tell me what you're working on. Let's talk.\n\n#DigitalMarketing #MetaAds #ChennaiBusiness",
+    "linkedin_comment": "Book a free consultation and we'll tell you if Growth is the right fit:",
+    "linkedin_poster": {
+      "layout": "offer",
+      "eyebrow": "Growth plan",
+      "headline": "Content and Meta Ads in one monthly plan",
+      "subline": "",
+      "items": [
+        "8 reels on 2 content days",
+        "Motion posters and carousels",
+        "Meta Ads management included",
+        "Monthly performance report",
+        "2 strategy calls"
+      ],
+      "left_label": "",
+      "left_text": "",
+      "right_label": "",
+      "right_text": "",
+      "price": "₹19,999/month",
+      "cta": "Book a free consultation"
+    }
+  },
+  "poster": "posters/20261114-morning.png",
+  "threads_link": "https://loyaraagency.com/contact/?utm_source=threads&utm_medium=social&utm_campaign=mistakes&utm_content=20261114-morning",
+  "linkedin_poster": "posters/20261114-morning-linkedin.png",
+  "linkedin_link": "https://loyaraagency.com/packages/?utm_source=linkedin&utm_medium=social&utm_campaign=li_service&utm_content=20261114-morning",
+  "created_at": "2026-11-14T08:39:53.607108+05:30"
+}
