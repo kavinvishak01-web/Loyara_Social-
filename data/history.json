@@ -44,5 +44,21 @@
     "linkedin_type": "sales",
     "linkedin_blog_url": null,
     "linkedin_hook": "Posting is not the hard part. Turning those posts into enquiries is."
+  },
+  {
+    "key": "20261115-morning",
+    "slot": "morning",
+    "pillar": "meta_ads",
+    "text": "Your ads are reaching people who will never visit you.\n\nA salon in Anna Nagar doesn't need clicks from Tambaram.\nThose people won't travel 20 km for a haircut.\n\nBut if your ad is set to all of Chennai, that's where your budget goes.\n\nSo pick the area your customers actually come from.\nShow them one clear offer.\nMake it easy to send a message.\n\nWant us to check your ad setup? Book a free consultation (link in the reply).",
+    "headline": "Your ad budget is going to the wrong area",
+    "poster": "posters/20261115-morning.png",
+    "blog_url": null,
+    "posted_at": "2026-11-15T08:40:40.916293+05:30",
+    "metrics": {},
+    "linkedin_urn": "urn:li:share:7527568733809037312",
+    "linkedin_angle": "li_lesson",
+    "linkedin_type": "education",
+    "linkedin_blog_url": null,
+    "linkedin_hook": "A lot of websites lose people before they even scroll. Not because the business is bad."
   }
 ]
