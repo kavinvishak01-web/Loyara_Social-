@@ -1,0 +1,60 @@
+{
+  "key": "20261116-morning",
+  "slot": "morning",
+  "pillar": "myth",
+  "blog": null,
+  "linkedin_due": true,
+  "linkedin_angle": {
+    "id": "li_process",
+    "label": "How we work / trust",
+    "brief": "Remove the fear of hiring an agency: show how Loyara works (free consultation, approved calendar, content days, reporting, 50/50 payment) and why that protects the client. End with a direct invitation to book a free consultation or DM.",
+    "poster": "list",
+    "link": "contact",
+    "type": "sales"
+  },
+  "linkedin_blog": null,
+  "post": {
+    "threads_text": "Myth: you need to post every day to get enquiries.\n\nFact: posting daily with no plan just tires you out.\n\nA cafe in Anna Nagar that posts 3 planned reels a week, each one showing the menu, the price and how to reach them, gives people a reason to message.\n\nRandom daily posts just give them something to scroll past.\n\nSo plan the month first. Then post.\n\nWant a plan like that for your business? Book a free consultation (link in the reply).",
+    "threads_reply": "Book a free consultation here:",
+    "topic_tag": "Small Business",
+    "poster": {
+      "layout": "compare",
+      "eyebrow": "Myth vs fact",
+      "headline": "Posting every day won't bring enquiries",
+      "subline": "",
+      "items": [],
+      "left_label": "Myth",
+      "left_text": "Post daily and the enquiries will come",
+      "right_label": "Fact",
+      "right_text": "A planned month of posts gives people a reason to message",
+      "price": "",
+      "cta": "Book a free consultation"
+    },
+    "linkedin_text": "Hiring a marketing agency shouldn't feel like a gamble.\n\nIf you've thought about it, you've probably had this worry: what if I pay, and then I don't know what's actually happening?\n\nThat's a fair worry. So at Loyara, we built the way we work around it.\n\n1. Free consultation first. We learn your business, your audience and your goals, then recommend a package. No charge.\n\n2. You approve the content calendar. Every month, you see the plan before we shoot anything.\n\n3. Content days are booked in advance. We come to your business and shoot the reels, posts and designs ourselves.\n\n4. You see the results. Growth comes with a monthly performance report, Elite with a monthly growth report, and both include strategy calls to review what's working.\n\n5. You pay 50/50. Half before the month's work begins, half before final delivery.\n\nEvery package lists exactly what you get. Starter is ₹15,999/month with 8 reels and 2 content days. Growth is ₹19,999/month and adds Meta Ads management.\n\nIt's for businesses in Chennai and Tamil Nadu that want to post consistently but don't have the time to plan and shoot everything themselves.\n\nIf that sounds like you, let's talk. Book a free consultation or just DM me.\n\n#DigitalMarketing #SmallBusiness #ChennaiBusiness",
+    "linkedin_comment": "Book your free consultation here:",
+    "linkedin_poster": {
+      "layout": "list",
+      "eyebrow": "How we work",
+      "headline": "Hiring an agency shouldn't feel like a gamble",
+      "subline": "",
+      "items": [
+        "Free consultation first",
+        "You approve the content calendar",
+        "Content days booked in advance",
+        "Monthly reports and strategy calls",
+        "Pay 50% now, 50% before delivery"
+      ],
+      "left_label": "",
+      "left_text": "",
+      "right_label": "",
+      "right_text": "",
+      "price": "",
+      "cta": "Book a free consultation"
+    }
+  },
+  "poster": "posters/20261116-morning.png",
+  "threads_link": "https://loyaraagency.com/contact/?utm_source=threads&utm_medium=social&utm_campaign=myth&utm_content=20261116-morning",
+  "linkedin_poster": "posters/20261116-morning-linkedin.png",
+  "linkedin_link": "https://loyaraagency.com/contact/?utm_source=linkedin&utm_medium=social&utm_campaign=li_process&utm_content=20261116-morning",
+  "created_at": "2026-11-16T08:42:24.553410+05:30"
+}
