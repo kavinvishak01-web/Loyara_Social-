@@ -20,6 +20,7 @@ jobs:
           OLD_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
+          [ -z "$OLD_TOKEN" ] && { echo "No Threads token set yet. Skipping."; exit 0; }
           RESP=$(curl -s "https://graph.threads.net/refresh_access_token?grant_type=th_refresh_token&access_token=${OLD_TOKEN}")
           NEW=$(echo "$RESP" | python3 -c 'import sys,json; print(json.load(sys.stdin).get("access_token",""))')
           if [ -z "$NEW" ]; then

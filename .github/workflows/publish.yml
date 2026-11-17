@@ -50,7 +50,7 @@ jobs:
             git fetch origin "$SRC_BRANCH"
             git checkout "origin/$SRC_BRANCH" -- data/pending.json || true
             if [ -f data/pending.json ]; then
-              for P in $(python3 -c 'import json;d=json.load(open("data/pending.json"));print(" ".join(x for x in [d["poster"], d.get("linkedin_poster")] if x))'); do
+              for P in $(python3 -c 'import json;d=json.load(open("data/pending.json"));print(" ".join(x for x in [d["poster"], d.get("linkedin_poster"), d.get("linkedin_pdf")] if x))'); do
                 git checkout "origin/$SRC_BRANCH" -- "$P"
               done
             fi

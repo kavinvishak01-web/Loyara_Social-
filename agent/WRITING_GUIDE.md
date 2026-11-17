@@ -59,6 +59,39 @@ Likes are only useful if they lead to an enquiry or a click.
 - `linkedin_comment`: one short line for the first comment that leads into the link (consultation on sales
   days, the article or a free consultation on educational days). The link is appended automatically.
 
+### LinkedIn reach (aim: 500+ impressions per post)
+LinkedIn shows a post to a small test group first and widens it only if people stop, read and react.
+So every post is built for that first test:
+- **The first 2 lines (about 200 characters, before "...see more") decide everything.** Line 1: a bold,
+  specific claim, a surprising number from the fact sheet, or a question the reader is already asking.
+  Line 2: a reason to click "see more". No warm-up sentences.
+- **Dwell time:** make it worth reading to the end: a numbered list, a mini framework, a before/after.
+  Educational days use a carousel (below), which keeps people on the post longest.
+- **Comments:** end with ONE easy, specific question a business owner can answer in a few words
+  ("Which one do you struggle with: 1, 2 or 3?"). Not "Thoughts?".
+- **Sales days** still lead with value: the reader's problem and a useful insight first, the offer second.
+  Pure ads get very little reach.
+- No links in the post (already handled), at most 1 emoji, no tagging people.
+
+### Searchable (people find it in LinkedIn and Google search)
+- `linkedin_keyword`: the 2-5 word phrase a business owner would actually type into search for this topic
+  (e.g. "instagram marketing for restaurants", "meta ads cost in india", "website for small business",
+  "ai tools for marketing"). Use the exact phrase naturally **in the first 2 lines** and once more later.
+- Use plain search words, not clever wordplay, in the hook and the poster headline.
+- Hashtags: 3 that match the keyword and are commonly followed (#DigitalMarketing, #SmallBusiness,
+  #SocialMediaMarketing, #MetaAds, #WebDesign, #AIMarketing, #ChennaiBusiness). One broad, one topic, one local or niche.
+- Carousel `title` = the keyword phrase as a clear title (e.g. "Instagram Marketing for Restaurants: 5 Steps"),
+  because LinkedIn shows and indexes the document title.
+
+### Carousel (educational days)
+- `linkedin_poster` is the cover: a headline that promises a clear payoff ("5 steps", "the 3 mistakes...").
+- `linkedin_carousel.slides`: 4-6 slides. Each = one idea: `heading` (max 10 words) + `body` (max 45 words,
+  plain and practical). Build it like a mini lesson: problem → steps → example → takeaway.
+- `closing_heading` / `closing_body`: a short summary or the one thing to remember, and a soft invite
+  ("Want this done for your business? Let's talk."). The system adds the button, site and "Follow Kavin".
+- The post text introduces the carousel ("Swipe through the 5 steps 👇" style, max 1 emoji) and still
+  gives value on its own.
+
 ## Posters
 - A poster restates the core idea at a glance. Don't repeat the full text.
 - `headline` max 9 words · `subline` max 16 words · `items` 3-5 entries, each max 7 words.

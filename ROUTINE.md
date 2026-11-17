@@ -13,8 +13,9 @@ which publishes them. You write the words yourself. Don't call any other AI mode
    business only, facts only from the fact sheet, no links/phone numbers, length limits, not a repeat.
 4. `python -m agent.main build`
    If it prints DRAFT REJECTED, fix what it lists and run it again until it prints READY.
-5. Look at each rendered poster PNG it names (open the image). If text overflows, is cut off or looks
-   cramped, shorten the fields under `post.poster` / `post.linkedin_poster` in `data/pending.json` and run
+5. Look at each rendered poster PNG it names, and on educational LinkedIn days every carousel page
+   (`posters/<KEY>-linkedin-p*.png`) (open the image). If text overflows, is cut off or looks
+   cramped, shorten the fields under `post.poster` / `post.linkedin_poster` / `post.linkedin_carousel` in `data/pending.json` and run
    `python -m agent.main rerender`. Repeat until it's clean and readable.
 6. Publish by pushing to a new branch:
    ```bash

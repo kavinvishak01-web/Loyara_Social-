@@ -143,8 +143,11 @@ def brief(slot: str, force_linkedin: Optional[str] = None) -> None:
     template = {"threads_text": "", "threads_reply": "", "topic_tag": "",
                 "poster": {**blank_poster, "layout": pillar["poster"]}}
     if linkedin_due:
-        template.update({"linkedin_text": "", "linkedin_comment": "",
+        template.update({"linkedin_text": "", "linkedin_comment": "", "linkedin_keyword": "",
                          "linkedin_poster": {**blank_poster, "layout": angle["poster"]}})
+        if angle["type"] == "education":
+            template["linkedin_carousel"] = {"title": "", "slides": [{"heading": "", "body": ""}],
+                                             "closing_heading": "", "closing_body": ""}
 
     s = settings["slots"][slot]
     blog_part = ""
@@ -159,6 +162,10 @@ def brief(slot: str, force_linkedin: Optional[str] = None) -> None:
         li_part = (f"\n## LinkedIn post due today: YES ({kind}: {angle['label']})\n"
                    f"{angle['brief']}\nThis is a separate topic from the Threads post, with its own poster "
                    f"(suggested layout: {angle['poster']}).\n")
+        if angle["type"] == "education":
+            li_part += ("FORMAT: a swipeable document CAROUSEL (PDF). linkedin_poster is the cover page; "
+                        "fill linkedin_carousel with 4-6 slides (see the carousel rules in the guide). "
+                        "The post text introduces it and makes people want to swipe.\n")
         if li_blog:
             li_part += (f"\nBlog article to teach from: {li_blog['title']} ({li_blog['url']}. The link is "
                         f"added automatically)\n{read_article(li_blog['url'])}\n")
@@ -210,7 +217,27 @@ def _poster_problems(name: str, p: Dict) -> List[str]:
 LINK_OR_PHONE = re.compile(r"https?://|www\.|\.com\b|\.in\b|\+?\d[\d \-]{8,}\d")
 
 
-def _problems(d: Dict, linkedin_due: bool) -> List[str]:
+def _carousel_problems(c) -> List[str]:
+    if not isinstance(c, dict):
+        return ["linkedin_carousel missing (required on educational days)"]
+    errs = []
+    slides = c.get("slides") or []
+    if not 4 <= len(slides) <= 7:
+        errs.append(f"linkedin_carousel needs 4-6 slides (has {len(slides)})")
+    if not c.get("title"):
+        errs.append("linkedin_carousel.title missing")
+    for i, sl in enumerate(slides, 1):
+        if not sl.get("heading") or len(sl["heading"].split()) > 10:
+            errs.append(f"slide {i}: heading missing or over 10 words")
+        if not sl.get("body") or len(sl["body"].split()) > 50:
+            errs.append(f"slide {i}: body missing or over 50 words")
+    for k in ("closing_heading", "closing_body"):
+        if not c.get(k):
+            errs.append(f"linkedin_carousel.{k} missing")
+    return errs
+
+
+def _problems(d: Dict, linkedin_due: bool, carousel: bool = False) -> List[str]:
     errs = [f"missing {k}" for k in ["threads_text", "threads_reply", "topic_tag"] if not d.get(k)]
     t = d.get("threads_text", "")
     if not 120 <= len(t) <= 480:
@@ -225,6 +252,13 @@ def _problems(d: Dict, linkedin_due: bool) -> List[str]:
             errs.append("missing linkedin_comment")
         texts += [("linkedin_text", li), ("linkedin_comment", d.get("linkedin_comment", ""))]
         errs += _poster_problems("linkedin_poster", d.get("linkedin_poster"))
+        kw = (d.get("linkedin_keyword") or "").strip().lower()
+        if not kw:
+            errs.append("missing linkedin_keyword (the search phrase this post targets)")
+        elif kw not in li.lower()[:300]:
+            errs.append(f"linkedin_keyword '{kw}' must appear in the first 300 characters of linkedin_text")
+        if carousel:
+            errs += _carousel_problems(d.get("linkedin_carousel"))
     for name, txt in texts:
         if LINK_OR_PHONE.search(txt or ""):
             errs.append(f"{name} contains a link or phone number (the system adds links)")
@@ -235,18 +269,23 @@ def _render_all(pend: Dict, site: str) -> None:
     render(pend["post"]["poster"], ROOT / pend["poster"], site)
     if pend.get("linkedin_poster"):
         render(pend["post"]["linkedin_poster"], ROOT / pend["linkedin_poster"], site)
+    if pend.get("linkedin_pdf"):
+        from .poster import render_carousel
+        render_carousel(ROOT / pend["linkedin_poster"], pend["post"]["linkedin_carousel"],
+                        ROOT / pend["linkedin_pdf"], site)
 
 
 def build() -> None:
     settings = load_settings()
     b = json.loads(BRIEF.read_text())
     d = json.loads(DRAFT.read_text())
-    errs = _problems(d, b["linkedin_due"])
+    carousel = bool(b["linkedin_due"] and (b.get("linkedin_angle") or {}).get("type") == "education")
+    errs = _problems(d, b["linkedin_due"], carousel)
     if errs:
         print("DRAFT REJECTED. Fix data/draft.json and run build again:\n- " + "\n- ".join(errs))
         sys.exit(1)
     if not b["linkedin_due"]:
-        for k in ("linkedin_text", "linkedin_comment", "linkedin_poster"):
+        for k in ("linkedin_text", "linkedin_comment", "linkedin_poster", "linkedin_carousel", "linkedin_keyword"):
             d.pop(k, None)
     pillar = next(p for p in settings["pillars"] if p["id"] == b["pillar"])
     key = b["key"]
@@ -256,6 +295,8 @@ def build() -> None:
     if b["linkedin_due"]:
         a = b["linkedin_angle"]
         pend["linkedin_poster"] = f"posters/{key}-linkedin.png"
+        if carousel:
+            pend["linkedin_pdf"] = f"posters/{key}-linkedin.pdf"
         pend["linkedin_link"] = cta_link(settings, a["link"], a["id"], key, "linkedin",
                                          (b.get("linkedin_blog") or {}).get("url"))
     pend["created_at"] = datetime.now(IST).isoformat()
@@ -264,6 +305,8 @@ def build() -> None:
     BRIEF.unlink()
     DRAFT.unlink()
     files = [pend["poster"]] + ([pend["linkedin_poster"]] if b["linkedin_due"] else [])
+    if pend.get("linkedin_pdf"):
+        files.append(pend["linkedin_pdf"] + " (preview pages: " + pend["linkedin_pdf"][:-4] + "-p*.png)")
     print(f"READY: data/pending.json + {', '.join(files)}. Check the poster(s), then commit and push.")
 
 
@@ -361,8 +404,15 @@ def _post_linkedin(settings: Dict, post: Dict, pend: Dict, record: Dict, failure
             from .linkedin_api import LinkedIn, LinkedInError
             li = LinkedIn(token, author, li_cfg.get("api_version", "202610"))
             try:
-                img = li.upload_image(ROOT / pend["linkedin_poster"])
-                urn = li.post(li_text, img, post["linkedin_poster"]["headline"])
+                if pend.get("linkedin_pdf"):
+                    doc = li.upload_document(ROOT / pend["linkedin_pdf"])
+                    urn = li.post(li_text, doc, "", document_title=post["linkedin_carousel"]["title"])
+                    record["linkedin_format"] = "carousel"
+                else:
+                    img = li.upload_image(ROOT / pend["linkedin_poster"])
+                    urn = li.post(li_text, img, post["linkedin_poster"]["headline"])
+                    record["linkedin_format"] = "image"
+                record["linkedin_keyword"] = post.get("linkedin_keyword")
                 record.update({"linkedin_urn": urn, "linkedin_angle": pend["linkedin_angle"]["id"],
                                "linkedin_type": pend["linkedin_angle"].get("type", "sales"),
                                "linkedin_blog_url": (pend.get("linkedin_blog") or {}).get("url"),
@@ -372,6 +422,7 @@ def _post_linkedin(settings: Dict, post: Dict, pend: Dict, record: Dict, failure
                     li.comment(urn, f"{post['linkedin_comment'].strip()} {pend['linkedin_link']}")
                 except LinkedInError as e:
                     print("LinkedIn link comment failed:", e)
+                    record["linkedin_comment_error"] = str(e)[:300]
             except LinkedInError as e:
                 failures.append(f"LinkedIn: {e}")
 

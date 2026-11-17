@@ -41,14 +41,26 @@ class LinkedIn:
         self._check(up, "image upload")
         return v["image"]
 
-    def post(self, text: str, image_urn: str, alt: str) -> str:
+    def upload_document(self, path: Path) -> str:
+        r = requests.post(f"{BASE}/documents?action=initializeUpload", headers=self.h, timeout=60,
+                          json={"initializeUploadRequest": {"owner": self.author}})
+        self._check(r, "document init")
+        v = r.json()["value"]
+        up = requests.put(v["uploadUrl"], data=path.read_bytes(), timeout=180,
+                          headers={"Authorization": self.h["Authorization"]})
+        self._check(up, "document upload")
+        return v["document"]
+
+    def post(self, text: str, media_urn: str, alt: str, document_title: str = "") -> str:
+        media = ({"id": media_urn, "title": document_title[:120]} if document_title
+                 else {"id": media_urn, "altText": alt[:300]})
         body = {
             "author": self.author,
             "commentary": escape_commentary(text),
             "visibility": "PUBLIC",
             "distribution": {"feedDistribution": "MAIN_FEED", "targetEntities": [],
                              "thirdPartyDistributionChannels": []},
-            "content": {"media": {"id": image_urn, "altText": alt[:300]}},
+            "content": {"media": media},
             "lifecycleState": "PUBLISHED",
             "isReshareDisabledByAuthor": False,
         }

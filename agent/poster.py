@@ -209,6 +209,61 @@ def render(p: dict, out: Path, site: str = "https://loyaraagency.com") -> Path:
     return out
 
 
+def _slide(heading: str, body: str, idx: int, total: int, last: bool, site: str,
+           author: str) -> Image.Image:
+    img = background()
+    d = ImageDraw.Draw(img)
+    top = header(img, f"{idx} / {total}")
+    max_w = W - 2 * PAD
+    bottom = H - PAD - 120
+    if last:
+        hf, hl, hlh = fit(heading, max_w, 330, 92, 56, 600)
+        y = draw_lines(d, PAD, top + 40, hl, hf, hlh, IVORY) + 30
+        bf = font(38, 400, display=False)
+        y = draw_lines(d, PAD, y, wrap(body, bf, max_w), bf, 54, MUTED) + 60
+        pf = font(30, 600, display=False)
+        label = "Book a free consultation  →"
+        d.rounded_rectangle((PAD, y, PAD + pf.getlength(label) + 64, y + 76), radius=38, fill=IVORY)
+        d.text((PAD + 32, y + 20), label, font=pf, fill=BLACK)
+        ff = font(28, 500, display=False)
+        d.text((PAD, y + 120), f"Follow {author} for more", font=ff, fill=SOFT)
+        host = site.replace("https://", "").replace("http://", "").rstrip("/")
+        d.text((PAD, y + 166), host, font=ff, fill=MUTED)
+    else:
+        nf = font(150, 700)
+        d.text((PAD - 6, top - 10), f"{idx - 1:02d}", font=nf, fill=(38, 38, 38))
+        hf, hl, hlh = fit(heading, max_w, 300, 80, 50, 600)
+        y = draw_lines(d, PAD, top + 170, hl, hf, hlh, IVORY) + 40
+        bf, bl, blh = fit(body, max_w, bottom - y, 44, 30, 400, 1.38)
+        draw_lines(d, PAD, y, bl, bf, blh, SOFT)
+    d.line([(PAD, H - PAD - 60), (W - PAD, H - PAD - 60)], fill=LINE, width=2)
+    sf = font(24, 500, display=False)
+    d.text((PAD, H - PAD - 30), author, font=sf, fill=MUTED)
+    if not last:
+        tag = "Swipe  →"
+        d.text((W - PAD - sf.getlength(tag), H - PAD - 30), tag, font=sf, fill=SOFT)
+    return img
+
+
+def render_carousel(cover: Path, carousel: dict, out_pdf: Path, site: str = "https://loyaraagency.com",
+                    author: str = "Kavin Vishak") -> Path:
+    """Cover image (the rendered LinkedIn poster) + one page per slide + a closing page, as one PDF."""
+    slides = carousel.get("slides") or []
+    total = len(slides) + 2
+    pages = [Image.open(cover).convert("RGB")]
+    for i, s in enumerate(slides):
+        pages.append(_slide(s.get("heading", "").replace("*", ""), s.get("body", "").replace("*", ""),
+                            i + 2, total, False, site, author))
+    pages.append(_slide(carousel.get("closing_heading") or "Want this done for your business?",
+                        carousel.get("closing_body") or "Tell me what you're working on. Let's talk.",
+                        total, total, True, site, author))
+    out_pdf.parent.mkdir(parents=True, exist_ok=True)
+    pages[0].save(out_pdf, "PDF", save_all=True, append_images=pages[1:], resolution=150)
+    for i, p in enumerate(pages):  # PNG previews so the routine can look at every page
+        p.save(out_pdf.with_name(f"{out_pdf.stem}-p{i + 1}.png"), "PNG", optimize=True)
+    return out_pdf
+
+
 if __name__ == "__main__":
     src = Path(sys.argv[1])
     data = json.loads(src.read_text())
