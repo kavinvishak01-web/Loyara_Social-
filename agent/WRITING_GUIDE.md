@@ -85,18 +85,40 @@ So every post is built for that first test:
 
 ### Carousel (educational days)
 - `linkedin_poster` is the cover: a headline that promises a clear payoff ("5 steps", "the 3 mistakes...").
-- `linkedin_carousel.slides`: 4-6 slides. Each = one idea: `heading` (max 10 words) + `body` (max 45 words,
-  plain and practical). Build it like a mini lesson: problem → steps → example → takeaway.
+- `linkedin_carousel.slides`: 4-6 slides. Each = one idea: `heading` (max 10 words) + `body` (max 30 words)
+  + `icon` (required) + optional `visual` mock-up. Build it like a mini lesson: problem → steps → example →
+  takeaway. Give at least half the slides a `visual` that shows the idea (calendar for planning, phone for
+  reels, website for landing pages, chat for WhatsApp/DMs, chart for growth, funnel for views → enquiries).
 - `closing_heading` / `closing_body`: a short summary or the one thing to remember, and a soft invite
   ("Want this done for your business? Let's talk."). The system adds the button, site and "Follow Kavin".
 - The post text introduces the carousel ("Swipe through the 5 steps 👇" style, max 1 emoji) and still
   gives value on its own.
 
-## Posters
-- A poster restates the core idea at a glance. Don't repeat the full text.
-- `headline` max 9 words · `subline` max 16 words · `items` 3-5 entries, each max 7 words.
+## Posters: show it, don't write it
+Posters are **visual first**. Someone scrolling should understand the idea from the picture in one second,
+before reading anything. The words on a poster are a label for the visual, not the post.
+Colours are fixed to the Loyara palette (black/greys, chrome and silver gradients, green for good, coral
+for bad, WhatsApp green for chat). You don't choose colours, only the layout, icons and visual.
+
+- **As few words as possible.** `headline` max 7 words (9 at most) · `subline` max 10 words, often leave it
+  empty · `items` max 4 words each (6 at most) · compare texts max 8 words each.
+- **Every poster has a visual:**
+  - `visual` (hook, stat, optional elsewhere): a mock-up that *shows* the idea:
+    `phone` (a reel / Instagram), `website` (landing page with a clear "Book now" button), `calendar`
+    (content plan with shoot days), `chat` (WhatsApp / DMs), `chart` (growth), `funnel` (views → likes →
+    messages → bookings), or a single icon name for a big hero icon.
+  - `icons`: one icon per item for `list`, `offer` and `steps`. Allowed icons: reel, calendar, chart, target,
+    megaphone, website, chat, whatsapp, pin, check, cross, clock, ai, search, rupee, users, camera, heart,
+    bolt, funnel, bulb, plan, phone, eye, arrow.
+- **Layouts:**
+  - `hook`: short headline + big mock-up (`visual` required). Best for one sharp idea.
+  - `list`: headline + 2-5 icon tiles (`items` + `icons`).
+  - `compare`: wrong way (coral ✕) vs right way (green ✓): `left_label/left_text` = bad,
+    `right_label/right_text` = good. For myths, boost vs ads, before/after.
+  - `steps`: 3-4 steps on a timeline (`items` + `icons`), the last one green. For processes and how-tos.
+  - `stat`: one huge chrome number or word in `price` (only a number from the fact sheet, e.g. "₹15,999",
+    "8 reels", "1 day", "3 days") + short headline + optional `visual`. Never an invented statistic.
+  - `offer`: headline + chrome `price` + 2-4 icon rows.
 - `eyebrow`: 1-3 word label ("Websites", "Reels", "Meta Ads", "Myth vs fact", "New on the blog").
-- `cta`: 2-5 words for the button ("Book a free consultation", "Read the full guide", "Get a website quote").
-- Layouts: `hook` = headline + subline · `list` = headline + items · `compare` = headline +
-  left/right label + text (myth/fact, before/after, problem/fix) · `offer` = headline + price + items.
-  Use the suggested layout unless another clearly fits better. Leave unused fields as "" or [].
+- `cta`: 2-5 words for the button ("Book a free consultation", "Swipe the steps", "Get a website quote").
+- Use the suggested layout unless another clearly fits better. Leave unused fields as "" or [].

@@ -30,9 +30,9 @@ ROOT = Path(__file__).resolve().parent.parent
 IST = timezone(timedelta(hours=5, minutes=30))
 DATA = ROOT / "data"
 BRIEF, DRAFT, PENDING = DATA / "brief.json", DATA / "draft.json", DATA / "pending.json"
-LAYOUTS = {"hook", "list", "compare", "offer"}
-POSTER_KEYS = ["layout", "eyebrow", "headline", "subline", "items", "left_label", "left_text",
-               "right_label", "right_text", "price", "cta"]
+LAYOUTS = {"hook", "list", "compare", "offer", "steps", "stat"}
+POSTER_KEYS = ["layout", "eyebrow", "headline", "subline", "visual", "items", "icons", "left_label",
+               "left_text", "right_label", "right_text", "price", "cta"]
 
 
 def load_settings() -> Dict:
@@ -139,14 +139,15 @@ def brief(slot: str, force_linkedin: Optional[str] = None) -> None:
                                  "blog": blog, "linkedin_due": linkedin_due,
                                  "linkedin_angle": angle if linkedin_due else None,
                                  "linkedin_blog": li_blog}, indent=2))
-    blank_poster = {k: ([] if k == "items" else "") for k in POSTER_KEYS}
+    blank_poster = {k: ([] if k in ("items", "icons") else "") for k in POSTER_KEYS}
     template = {"threads_text": "", "threads_reply": "", "topic_tag": "",
                 "poster": {**blank_poster, "layout": pillar["poster"]}}
     if linkedin_due:
         template.update({"linkedin_text": "", "linkedin_comment": "", "linkedin_keyword": "",
                          "linkedin_poster": {**blank_poster, "layout": angle["poster"]}})
         if angle["type"] == "education":
-            template["linkedin_carousel"] = {"title": "", "slides": [{"heading": "", "body": ""}],
+            template["linkedin_carousel"] = {"title": "", "slides": [{"heading": "", "body": "", "icon": "",
+                                                                       "visual": ""}],
                                              "closing_heading": "", "closing_body": ""}
 
     s = settings["slots"][slot]
@@ -211,6 +212,23 @@ def _poster_problems(name: str, p: Dict) -> List[str]:
         errs.append(f"{name}.items needs 3-5 entries for list/offer")
     if p["layout"] == "compare" and not (p.get("left_text") and p.get("right_text")):
         errs.append(f"{name} (compare) needs left_text and right_text")
+    if p["layout"] == "steps" and not 3 <= len(p.get("items") or []) <= 4:
+        errs.append(f"{name}.items needs 3-4 steps for the steps layout")
+    if p["layout"] == "stat" and not p.get("price"):
+        errs.append(f"{name} (stat) needs the big number/word in price (from the fact sheet)")
+    for it in (p.get("items") or []):
+        if len(it.split()) > 6:
+            errs.append(f"{name}.items entry too long (max 6 words): {it!r}")
+    from .poster import ICONS, VISUALS
+    bad = [i for i in (p.get("icons") or []) if i not in ICONS]
+    if bad:
+        errs.append(f"{name}.icons has unknown names {bad}; use only {ICONS}")
+    if p["layout"] in ("list", "offer", "steps") and len(p.get("icons") or []) != len(p.get("items") or []):
+        errs.append(f"{name}.icons needs one icon per item")
+    if p.get("visual") and p["visual"] not in VISUALS + ICONS:
+        errs.append(f"{name}.visual must be one of {VISUALS} or an icon name")
+    if p["layout"] == "hook" and not p.get("visual"):
+        errs.append(f"{name}.visual is required for the hook layout")
     return errs
 
 
@@ -229,8 +247,13 @@ def _carousel_problems(c) -> List[str]:
     for i, sl in enumerate(slides, 1):
         if not sl.get("heading") or len(sl["heading"].split()) > 10:
             errs.append(f"slide {i}: heading missing or over 10 words")
-        if not sl.get("body") or len(sl["body"].split()) > 50:
-            errs.append(f"slide {i}: body missing or over 50 words")
+        if not sl.get("body") or len(sl["body"].split()) > 30:
+            errs.append(f"slide {i}: body missing or over 30 words (let the visual do the work)")
+        from .poster import ICONS, VISUALS
+        if sl.get("icon") not in ICONS:
+            errs.append(f"slide {i}: icon must be one of {ICONS}")
+        if sl.get("visual") and sl["visual"] not in VISUALS:
+            errs.append(f"slide {i}: visual must be empty or one of {VISUALS}")
     for k in ("closing_heading", "closing_body"):
         if not c.get(k):
             errs.append(f"linkedin_carousel.{k} missing")

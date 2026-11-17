@@ -1,0 +1,11 @@
+[
+ {"pillar":"hook_website","poster":{"layout":"hook","eyebrow":"Websites","headline":"Visitors land. Nobody books.","subline":"Fix the first screen.","visual":"website","cta":"Get a website quote"}},
+ {"pillar":"hook_phone","poster":{"layout":"hook","eyebrow":"Reels","headline":"The first second decides the reel","visual":"phone","cta":"Book a free consultation"}},
+ {"pillar":"list","poster":{"layout":"list","eyebrow":"Restaurants","headline":"Instagram marketing for restaurants","items":["Plan the month","Shoot in one day","Hook in 1 second","Reply fast"],"icons":["calendar","camera","bolt","chat"],"cta":"Swipe the steps"}},
+ {"pillar":"compare","poster":{"layout":"compare","eyebrow":"Meta Ads","headline":"Boost vs real Meta Ads","left_label":"Boost button","left_text":"Likes from anywhere. No enquiries.","right_label":"Meta Ads","right_text":"Your area. One goal: messages.","cta":"Talk to us about ads"}},
+ {"pillar":"offer","poster":{"layout":"offer","eyebrow":"Growth plan","headline":"Reels + Meta Ads, one plan","price":"₹19,999/mo","items":["8 reels shot at your place","Meta Ads management","Monthly report"],"icons":["reel","target","chart"],"cta":"Book a free consultation"}},
+ {"pillar":"steps","poster":{"layout":"steps","eyebrow":"How we work","headline":"From call to first post","items":["Free consultation","Approve the calendar","Content day","Publish and review"],"icons":["chat","calendar","camera","chart"],"cta":"Book a free consultation"}},
+ {"pillar":"stat","poster":{"layout":"stat","eyebrow":"Content days","headline":"One shoot. A month of reels.","price":"1 day","subline":"Plan it first, then film everything in one go.","visual":"calendar","cta":"Book a free consultation"}},
+ {"pillar":"hook_funnel","poster":{"layout":"hook","eyebrow":"Leads","headline":"Views are not enquiries","visual":"funnel","cta":"Book a free consultation"}},
+ {"pillar":"hook_chat","poster":{"layout":"hook","eyebrow":"WhatsApp","headline":"Make it easy to message you","visual":"chat","cta":"Book a free consultation"}}
+]

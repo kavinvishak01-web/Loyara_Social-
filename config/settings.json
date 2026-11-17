@@ -111,7 +111,7 @@
           "id": "li_process",
           "label": "How we work / trust",
           "brief": "Remove the fear of hiring an agency: show how Loyara works (free consultation, approved calendar, content days, reporting, 50/50 payment) and why that protects the client. End with a direct invitation to book a free consultation or DM.",
-          "poster": "list",
+          "poster": "steps",
           "link": "contact"
         }
       ],
@@ -119,7 +119,7 @@
         {
           "id": "li_tip",
           "label": "Practical tip",
-          "poster": "list",
+          "poster": "steps",
           "link": "contact",
           "brief": "Teach one practical, specific thing a business owner can do this week to get more from social media or reels (e.g. a hook formula, what to film on a shoot day, how to plan a month of posts). Give the steps. No sales pitch: at most one soft line at the end that Loyara does this for clients."
         },
