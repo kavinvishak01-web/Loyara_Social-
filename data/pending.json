@@ -1,0 +1,59 @@
+{
+  "key": "20261117-morning",
+  "slot": "morning",
+  "pillar": "local",
+  "blog": null,
+  "linkedin_due": true,
+  "linkedin_angle": {
+    "id": "li_ai",
+    "label": "AI in marketing, explained",
+    "poster": "list",
+    "link": "contact",
+    "brief": "Explain, in plain words, how a small business can use AI in its marketing today (e.g. drafting captions, research, ad targeting ideas), and where a human still matters. Only describe well-known, general capabilities; do not claim specific new launches, features, prices or dates unless they appear in the website or blog content in this brief. No pitch.",
+    "type": "education"
+  },
+  "linkedin_blog": null,
+  "post": {
+    "threads_text": "Before anyone drives across Chennai traffic to try you, they check your Instagram.\n\nA cafe in Anna Nagar. A boutique in T. Nagar. A clinic in Velachery.\n\nIf the last post is from three months ago, people quietly assume you're not that active. So they pick the place that looks alive.\n\nThe fix is not posting every day. It's a planned month, with real reels shot at your place.\n\nWant to see what that looks like for your business? Book a free consultation (link in the reply).",
+    "threads_reply": "Tell us about your business here:",
+    "topic_tag": "Chennai",
+    "poster": {
+      "layout": "hook",
+      "eyebrow": "Chennai businesses",
+      "headline": "They check your Instagram before they visit",
+      "subline": "An old last post makes people pick the place that looks alive.",
+      "items": [],
+      "left_label": "",
+      "left_text": "",
+      "right_label": "",
+      "right_text": "",
+      "price": "",
+      "cta": "Book a free consultation"
+    },
+    "linkedin_text": "AI won't run your marketing for you. But it can take a lot of the slow work off your plate.\n\nI think a lot of small business owners either ignore AI completely or expect it to do everything. Actually, the useful part is somewhere in the middle.\n\nSo here's how I'd explain it, simply.\n\nWhere AI helps today:\n\n1. First drafts of captions. Give it your offer and your audience, and you get a few options to start from. Much faster than staring at a blank screen.\n\n2. Research. Ask it what questions customers usually have about your kind of business. That gives you content ideas for the month.\n\n3. Ad targeting ideas. It can suggest audience angles to test, like interests, age groups or different reasons people buy.\n\n4. Repurposing. One long video or blog can be turned into short post ideas.\n\nWhere a human still matters:\n\n→ Knowing your customers. AI doesn't know that your regulars come in after 7 pm or what they always ask at the counter.\n→ Taste. Deciding what actually looks and sounds like your brand.\n→ The shoot itself. Someone still has to show up, frame the shot and capture the real place.\n→ Judgement. Checking every fact before it goes out, because AI can get things wrong with full confidence.\n\nSo the simple way to think about it: let AI do the first draft and the research. Keep the decisions and the final call with people who know your business.\n\nThis is how we use it at Loyara too.\n\n#AIMarketing #SmallBusiness #DigitalMarketing",
+    "linkedin_comment": "If you want help setting this up for your business, book a free consultation:",
+    "linkedin_poster": {
+      "layout": "list",
+      "eyebrow": "AI in marketing",
+      "headline": "Let AI draft. Keep humans deciding.",
+      "subline": "",
+      "items": [
+        "Caption first drafts",
+        "Customer question research",
+        "Ad audience ideas to test",
+        "Final call stays with people"
+      ],
+      "left_label": "",
+      "left_text": "",
+      "right_label": "",
+      "right_text": "",
+      "price": "",
+      "cta": "Book a free consultation"
+    }
+  },
+  "poster": "posters/20261117-morning.png",
+  "threads_link": "https://loyaraagency.com/contact/?utm_source=threads&utm_medium=social&utm_campaign=local&utm_content=20261117-morning",
+  "linkedin_poster": "posters/20261117-morning-linkedin.png",
+  "linkedin_link": "https://loyaraagency.com/contact/?utm_source=linkedin&utm_medium=social&utm_campaign=li_ai&utm_content=20261117-morning",
+  "created_at": "2026-11-17T08:40:09.490187+05:30"
+}
