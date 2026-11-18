@@ -92,5 +92,24 @@
     "linkedin_type": "education",
     "linkedin_blog_url": null,
     "linkedin_hook": "AI won't run your marketing for you. But it can take a lot of the slow work off your plate."
+  },
+  {
+    "key": "20261118-morning",
+    "slot": "morning",
+    "pillar": "pain_point",
+    "text": "You post for two weeks. Then the shop gets busy and the page goes quiet for a month.\n\nThat gap costs more than you think. People check your Instagram before they visit, and a dead page looks like a closed business.\n\nThe fix is not more motivation. It's a plan made before the month starts, with shoot days already on the calendar.\n\nThat's how we run it at Loyara. Book a free consultation (link in the reply).",
+    "headline": "Your page went quiet again?",
+    "poster": "posters/20261118-morning.png",
+    "blog_url": null,
+    "posted_at": "2026-11-18T08:40:51.795750+05:30",
+    "metrics": {},
+    "linkedin_format": "image",
+    "linkedin_keyword": "meta ads for small business",
+    "linkedin_urn": "urn:li:share:7528655945179111424",
+    "linkedin_angle": "li_problem",
+    "linkedin_type": "sales",
+    "linkedin_blog_url": null,
+    "linkedin_hook": "Running Meta Ads for small business? Most of the money goes wrong after the click, not before it.",
+    "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
   }
 ]
