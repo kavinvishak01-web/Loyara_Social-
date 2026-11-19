@@ -111,5 +111,24 @@
     "linkedin_blog_url": null,
     "linkedin_hook": "Running Meta Ads for small business? Most of the money goes wrong after the click, not before it.",
     "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
+  },
+  {
+    "key": "20261119-morning",
+    "slot": "morning",
+    "pillar": "website",
+    "text": "Your website has to answer 3 questions before anyone scrolls.\n\nWhat do you do?\nWho is it for?\nHow do I book?\n\nA kids' dental clinic in Velachery doesn't need a fancy slider. It needs one clear line saying what it does, for whom, and a \"Book now\" button right at the top.\n\nBecause if people have to hunt for those answers, they just go back to Google and pick the next clinic.\n\nWant us to check yours? Book a free consultation (link in the reply).",
+    "headline": "Answer these before they scroll",
+    "poster": "posters/20261119-morning.png",
+    "blog_url": null,
+    "posted_at": "2026-11-19T08:41:48.474931+05:30",
+    "metrics": {},
+    "linkedin_format": "carousel",
+    "linkedin_keyword": "chatgpt business profile",
+    "linkedin_urn": "urn:li:ugcPost:7529018570832412672",
+    "linkedin_angle": "li_blog",
+    "linkedin_type": "education",
+    "linkedin_blog_url": "https://loyaraagency.com/blog/chatgpt-business-profile/",
+    "linkedin_hook": "Your ChatGPT business profile is now something you can actually claim.",
+    "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
   }
 ]
