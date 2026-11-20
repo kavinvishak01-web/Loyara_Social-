@@ -130,5 +130,24 @@
     "linkedin_blog_url": "https://loyaraagency.com/blog/chatgpt-business-profile/",
     "linkedin_hook": "Your ChatGPT business profile is now something you can actually claim.",
     "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
+  },
+  {
+    "key": "20261120-morning",
+    "slot": "morning",
+    "pillar": "mistakes",
+    "text": "Your Instagram profile might be sending customers away quietly.\n\nA cafe in Anna Nagar can have great reels and still lose people at the profile. Usually it's one of these:\n\n→ No clear way to contact you in the bio\n→ \"DM for price\" with no reply for a day\n→ Posts that never say what to do next\n→ Old highlights with last year's menu\n\nFix these before you spend on ads.\n\nWhich one is your page doing right now?",
+    "headline": "4 profile mistakes costing you leads",
+    "poster": "posters/20261120-morning.png",
+    "blog_url": null,
+    "posted_at": "2026-11-20T08:40:30.839925+05:30",
+    "metrics": {},
+    "linkedin_format": "image",
+    "linkedin_keyword": "digital marketing package in Chennai",
+    "linkedin_urn": "urn:li:share:7529380632347488257",
+    "linkedin_angle": "li_service",
+    "linkedin_type": "sales",
+    "linkedin_blog_url": null,
+    "linkedin_hook": "Looking for a digital marketing package in Chennai that brings enquiries, not just posts?",
+    "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
   }
 ]
