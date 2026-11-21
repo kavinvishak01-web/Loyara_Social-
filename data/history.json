@@ -149,5 +149,24 @@
     "linkedin_blog_url": null,
     "linkedin_hook": "Looking for a digital marketing package in Chennai that brings enquiries, not just posts?",
     "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
+  },
+  {
+    "key": "20261121-morning",
+    "slot": "morning",
+    "pillar": "meta_ads",
+    "text": "Your Meta ad asked for likes. So it got likes.\n\nMeta gives you what the campaign is set up to get. Pick engagement, and it finds people who tap like and scroll on.\n\nPick a messages or leads campaign, and it looks for people who actually start a chat.\n\nSo a salon in Anna Nagar that wants bookings needs a messages campaign, a clear offer and a WhatsApp button.\n\nWant us to check your ad setup? DM us \"ADS\".",
+    "headline": "Ask Meta for enquiries, not likes",
+    "poster": "posters/20261121-morning.png",
+    "blog_url": null,
+    "posted_at": "2026-11-21T08:40:45.072213+05:30",
+    "metrics": {},
+    "linkedin_format": "carousel",
+    "linkedin_keyword": "reel hooks for business",
+    "linkedin_urn": "urn:li:ugcPost:7529743078971047936",
+    "linkedin_angle": "li_tip",
+    "linkedin_type": "education",
+    "linkedin_blog_url": null,
+    "linkedin_hook": "Most reels for business lose people in the first second. And usually it's the hook, not the video.",
+    "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
   }
 ]
