@@ -1,0 +1,107 @@
+{
+  "key": "20261121-morning",
+  "slot": "morning",
+  "pillar": "meta_ads",
+  "blog": null,
+  "linkedin_due": true,
+  "linkedin_angle": {
+    "id": "li_tip",
+    "label": "Practical tip",
+    "poster": "steps",
+    "link": "contact",
+    "brief": "Teach one practical, specific thing a business owner can do this week to get more from social media or reels (e.g. a hook formula, what to film on a shoot day, how to plan a month of posts). Give the steps. No sales pitch: at most one soft line at the end that Loyara does this for clients.",
+    "type": "education"
+  },
+  "linkedin_blog": null,
+  "post": {
+    "threads_text": "Your Meta ad asked for likes. So it got likes.\n\nMeta gives you what the campaign is set up to get. Pick engagement, and it finds people who tap like and scroll on.\n\nPick a messages or leads campaign, and it looks for people who actually start a chat.\n\nSo a salon in Anna Nagar that wants bookings needs a messages campaign, a clear offer and a WhatsApp button.\n\nWant us to check your ad setup? DM us \"ADS\".",
+    "threads_reply": "Or book a free consultation and we'll look at your ads together:",
+    "topic_tag": "Meta Ads",
+    "poster": {
+      "layout": "compare",
+      "eyebrow": "Meta Ads",
+      "headline": "Ask Meta for enquiries, not likes",
+      "subline": "",
+      "visual": "",
+      "items": [],
+      "icons": [],
+      "left_label": "Engagement campaign",
+      "left_text": "Likes and shares, no bookings",
+      "right_label": "Messages campaign",
+      "right_text": "WhatsApp chats from real buyers",
+      "price": "",
+      "cta": "Book a free consultation"
+    },
+    "linkedin_text": "Most reels for business lose people in the first second. And usually it's the hook, not the video.\n\nSo here's a simple way to write reel hooks for business that you can try this week.\n\nWhy it matters: people decide very fast whether to keep watching. If the opening doesn't tell them why this is for them, they scroll. Even if the rest of the reel is good.\n\nHere's the formula I'd use:\n\n1. Start with who it's for. \"If you run a clinic in Chennai...\" Now the right people stop.\n2. Name one problem or want. \"...and your weekends are slow...\"\n3. Promise a payoff. \"...try this one thing.\"\n4. Put the hook on screen as text too, because a lot of people watch without sound.\n5. Write 5 hooks before you shoot. Then pick the clearest one, not the cleverest.\n\nA simple example for a bakery in T. Nagar:\nInstead of \"Welcome to our bakery!\" try \"Ordering a birthday cake in T. Nagar? Watch this before you book.\"\n\nSame video. Very different first second.\n\nThat's really all good reel hooks for business need: the right person, one problem, one reason to stay. Swipe through the 5 steps 👇\n\nThis is the kind of thing we do for clients at Loyara.\n\nWhich step do you usually skip: 1, 2, 3, 4 or 5?\n\n#DigitalMarketing #InstagramReels #ChennaiBusiness",
+    "linkedin_comment": "Want help planning reels that bring enquiries? Book a free consultation:",
+    "linkedin_keyword": "reel hooks for business",
+    "linkedin_poster": {
+      "layout": "steps",
+      "eyebrow": "Reels",
+      "headline": "Write reel hooks that stop the scroll",
+      "subline": "5 steps you can use this week",
+      "visual": "",
+      "items": [
+        "Say who it's for",
+        "Name one problem",
+        "Promise a payoff",
+        "Pick the clearest hook"
+      ],
+      "icons": [
+        "users",
+        "target",
+        "bulb",
+        "check"
+      ],
+      "left_label": "",
+      "left_text": "",
+      "right_label": "",
+      "right_text": "",
+      "price": "",
+      "cta": "Swipe the steps"
+    },
+    "linkedin_carousel": {
+      "title": "Reel Hooks for Business: 5 Simple Steps",
+      "slides": [
+        {
+          "heading": "Start with who it's for",
+          "body": "Open by naming your customer. \"If you run a clinic in Chennai...\" The right people stop scrolling because they know it's for them.",
+          "icon": "users",
+          "visual": "phone"
+        },
+        {
+          "heading": "Name one problem or want",
+          "body": "Just one. \"...and your weekends are slow.\" A clear problem keeps people watching more than a list of features.",
+          "icon": "target",
+          "visual": ""
+        },
+        {
+          "heading": "Promise a payoff",
+          "body": "Tell them what they get if they stay. \"Try this one thing.\" Now they have a reason to watch till the end.",
+          "icon": "bulb",
+          "visual": "chart"
+        },
+        {
+          "heading": "Put the hook on screen too",
+          "body": "A lot of people watch without sound. So show the hook as big text in the first frame, not only in your voice.",
+          "icon": "eye",
+          "visual": "phone"
+        },
+        {
+          "heading": "Write 5 hooks first",
+          "body": "Then pick the clearest, not the cleverest. Like: \"Ordering a birthday cake in T. Nagar? Watch this before you book.\"",
+          "icon": "plan",
+          "visual": "calendar"
+        }
+      ],
+      "closing_heading": "Right person. One problem. One reason to stay.",
+      "closing_body": "That's a good hook. Want reels like this planned for your business? Let's talk."
+    }
+  },
+  "poster": "posters/20261121-morning.png",
+  "threads_link": "https://loyaraagency.com/contact/?utm_source=threads&utm_medium=social&utm_campaign=meta_ads&utm_content=20261121-morning",
+  "linkedin_poster": "posters/20261121-morning-linkedin.png",
+  "linkedin_pdf": "posters/20261121-morning-linkedin.pdf",
+  "linkedin_link": "https://loyaraagency.com/contact/?utm_source=linkedin&utm_medium=social&utm_campaign=li_tip&utm_content=20261121-morning",
+  "created_at": "2026-11-21T08:39:53.836208+05:30"
+}
