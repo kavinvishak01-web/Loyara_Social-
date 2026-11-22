@@ -168,5 +168,24 @@
     "linkedin_blog_url": null,
     "linkedin_hook": "Most reels for business lose people in the first second. And usually it's the hook, not the video.",
     "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
+  },
+  {
+    "key": "20261122-morning",
+    "slot": "morning",
+    "pillar": "myth",
+    "text": "Myth: more followers will bring you more enquiries.\n\nFact: thousands of followers who live far away won't book a table.\n\nA cafe in Anna Nagar needs people nearby who can actually walk in. So the content has to speak to them, and the profile has to make booking easy.\n\nThat's where enquiries come from. Not the follower count.\n\nWant us to look at your page? Book a free consultation (link in the reply).",
+    "headline": "Followers don't pay. Customers do.",
+    "poster": "posters/20261122-morning.png",
+    "blog_url": null,
+    "posted_at": "2026-11-22T08:40:20.295973+05:30",
+    "metrics": {},
+    "linkedin_format": "image",
+    "linkedin_keyword": "digital marketing agency in chennai",
+    "linkedin_urn": "urn:li:share:7530105362172133376",
+    "linkedin_angle": "li_process",
+    "linkedin_type": "sales",
+    "linkedin_blog_url": null,
+    "linkedin_hook": "Before you pay a digital marketing agency in Chennai, ask one thing: how do you work?",
+    "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
   }
 ]
