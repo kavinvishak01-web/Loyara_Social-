@@ -187,5 +187,24 @@
     "linkedin_blog_url": null,
     "linkedin_hook": "Before you pay a digital marketing agency in Chennai, ask one thing: how do you work?",
     "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
+  },
+  {
+    "key": "20261123-morning",
+    "slot": "morning",
+    "pillar": "local",
+    "text": "Stock photos won't fill a cafe in Anna Nagar.\n\nPeople scrolling in Chennai can tell in a second when a post is just a template. So they scroll past.\n\nWhat actually makes them stop is your place. Your kitchen, your staff, the dish your regulars always order, filmed properly.\n\nThat's why we shoot reels at your business, on content days planned in advance.\n\nWant to see what that could look like for you? Book a free consultation, link in the reply.",
+    "headline": "Stock photos won't fill your cafe",
+    "poster": "posters/20261123-morning.png",
+    "blog_url": null,
+    "posted_at": "2026-11-23T08:40:55.595843+05:30",
+    "metrics": {},
+    "linkedin_format": "carousel",
+    "linkedin_keyword": "mobile friendly website",
+    "linkedin_urn": "urn:li:ugcPost:7530467898956447745",
+    "linkedin_angle": "li_lesson",
+    "linkedin_type": "education",
+    "linkedin_blog_url": null,
+    "linkedin_hook": "Is your website built for phones, or does it just open on one? Those are two very different things.",
+    "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
   }
 ]
