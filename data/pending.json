@@ -1,0 +1,97 @@
+{
+  "key": "20261123-morning",
+  "slot": "morning",
+  "pillar": "local",
+  "blog": null,
+  "linkedin_due": true,
+  "linkedin_angle": {
+    "id": "li_lesson",
+    "label": "Website / Meta Ads lesson",
+    "poster": "compare",
+    "link": "contact",
+    "brief": "Explain one concept about websites or Meta Ads that business owners get wrong (e.g. boost vs real campaigns, what a landing page needs above the fold, why a site loses mobile visitors). Write for business owners anywhere in the world. Teach clearly, with a simple example. No pitch.",
+    "type": "education"
+  },
+  "linkedin_blog": null,
+  "post": {
+    "threads_text": "Stock photos won't fill a cafe in Anna Nagar.\n\nPeople scrolling in Chennai can tell in a second when a post is just a template. So they scroll past.\n\nWhat actually makes them stop is your place. Your kitchen, your staff, the dish your regulars always order, filmed properly.\n\nThat's why we shoot reels at your business, on content days planned in advance.\n\nWant to see what that could look like for you? Book a free consultation, link in the reply.",
+    "threads_reply": "Book a free consultation with Loyara here:",
+    "topic_tag": "Chennai",
+    "poster": {
+      "layout": "hook",
+      "eyebrow": "Chennai businesses",
+      "headline": "Stock photos won't fill your cafe",
+      "subline": "Real reels, shot at your place.",
+      "visual": "phone",
+      "items": [],
+      "icons": [],
+      "left_label": "",
+      "left_text": "",
+      "right_label": "",
+      "right_text": "",
+      "price": "",
+      "cta": "Book a free consultation"
+    },
+    "linkedin_text": "Is your website built for phones, or does it just open on one? Those are two very different things.\nA mobile friendly website is made for a thumb and a small screen first. Not shrunk down from a laptop design.\n\nHere's why it matters. When someone finds you on Instagram or through a Meta ad, they tap your link inside the app. So your site opens on a phone. That's the first impression.\n\nBut most of us design and check our websites on a laptop. So the problems don't show up for us. They only show up for the customer.\n\nThe 3 mistakes I'd check first:\n1. Text and buttons so small that people have to pinch and zoom.\n2. The \"Book now\" or WhatsApp button sits four scrolls down instead of near the top.\n3. Heavy images that load fast on office wifi but crawl on mobile data.\n\nA simple example: a clinic website with a long intro and the contact button at the very bottom. On a phone, a patient has to dig for it. Put the clinic name, what you treat and one clear button on the first screen, and booking becomes easy.\n\nSo a mobile friendly website isn't a fancy extra. It's where your Instagram and ad visitors actually land.\n\nSwipe through for each fix 👇\n\nQuick test: open your own site on your phone today, the way a customer would.\n\nWhich one is your site guilty of: 1, 2 or 3?\n\n#WebDesign #SmallBusiness #DigitalMarketing",
+    "linkedin_comment": "Want a second pair of eyes on your website? Book a free consultation:",
+    "linkedin_keyword": "mobile friendly website",
+    "linkedin_poster": {
+      "layout": "compare",
+      "eyebrow": "Websites",
+      "headline": "Mobile Friendly Website: 3 Mistakes",
+      "subline": "",
+      "visual": "",
+      "items": [],
+      "icons": [],
+      "left_label": "Designed on a laptop",
+      "left_text": "Tiny text, button four scrolls down",
+      "right_label": "Designed for a phone",
+      "right_text": "Big text, one clear button up top",
+      "price": "",
+      "cta": "Swipe the 3 fixes"
+    },
+    "linkedin_carousel": {
+      "title": "Mobile Friendly Website: 3 Mistakes to Fix",
+      "slides": [
+        {
+          "heading": "Your visitors are on a phone",
+          "body": "Someone taps your link on Instagram or a Meta ad. Your website opens inside the app, on a small screen. That's the first impression.",
+          "icon": "phone",
+          "visual": "phone"
+        },
+        {
+          "heading": "Mistake 1: tiny text and buttons",
+          "body": "If people have to pinch and zoom to read or tap, most just go back. Keep text easy to read and buttons big enough for a thumb.",
+          "icon": "eye",
+          "visual": "website"
+        },
+        {
+          "heading": "Mistake 2: the button is too far down",
+          "body": "On a laptop your Book now button sits on screen. On a phone it can end up four scrolls down. Put one clear action near the top.",
+          "icon": "target",
+          "visual": ""
+        },
+        {
+          "heading": "Mistake 3: slow, heavy pages",
+          "body": "Big images look great on office wifi. On mobile data they take ages to load. Compress images and cut what isn't needed.",
+          "icon": "clock",
+          "visual": ""
+        },
+        {
+          "heading": "Example: a clinic website",
+          "body": "Before: long intro, contact button at the bottom. After: clinic name, what you treat and a WhatsApp button, all on the first screen.",
+          "icon": "website",
+          "visual": "website"
+        }
+      ],
+      "closing_heading": "Check it on your own phone",
+      "closing_body": "Open your site on your phone today, the way a customer would. Want this done for your business? Let's talk."
+    }
+  },
+  "poster": "posters/20261123-morning.png",
+  "threads_link": "https://loyaraagency.com/contact/?utm_source=threads&utm_medium=social&utm_campaign=local&utm_content=20261123-morning",
+  "linkedin_poster": "posters/20261123-morning-linkedin.png",
+  "linkedin_pdf": "posters/20261123-morning-linkedin.pdf",
+  "linkedin_link": "https://loyaraagency.com/contact/?utm_source=linkedin&utm_medium=social&utm_campaign=li_lesson&utm_content=20261123-morning",
+  "created_at": "2026-11-23T08:40:07.039332+05:30"
+}
