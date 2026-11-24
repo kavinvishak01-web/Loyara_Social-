@@ -206,5 +206,24 @@
     "linkedin_blog_url": null,
     "linkedin_hook": "Is your website built for phones, or does it just open on one? Those are two very different things.",
     "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
+  },
+  {
+    "key": "20261124-morning",
+    "slot": "morning",
+    "pillar": "pain_point",
+    "text": "Your posts look good. But they never tell people what to do next.\n\nA cafe in Anna Nagar posts a lovely reel of its new coffee.\nNo timing. No location. No \"order on WhatsApp\".\nSo people like it and keep scrolling.\n\nEvery post needs one job: visit, book, message or order.\nThat's where enquiries actually start.\n\nWant us to look at your page and plan this properly? Book a free consultation, link in the reply.",
+    "headline": "Nice post. Now what?",
+    "poster": "posters/20261124-morning.png",
+    "blog_url": null,
+    "posted_at": "2026-11-24T08:41:03.092299+05:30",
+    "metrics": {},
+    "linkedin_format": "image",
+    "linkedin_keyword": "brand identity for small business",
+    "linkedin_urn": "urn:li:share:7530830319655129088",
+    "linkedin_angle": "li_problem",
+    "linkedin_type": "sales",
+    "linkedin_blog_url": null,
+    "linkedin_hook": "Brand identity for small business is not about a fancy logo.",
+    "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
   }
 ]
