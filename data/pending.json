@@ -1,0 +1,59 @@
+{
+  "key": "20261124-morning",
+  "slot": "morning",
+  "pillar": "pain_point",
+  "blog": null,
+  "linkedin_due": true,
+  "linkedin_angle": {
+    "id": "li_problem",
+    "label": "Problem → solution",
+    "brief": "Name a costly problem business owners have (no consistent content, no enquiries from social, a website that doesn't convert, ads wasting money). Explain why it happens, how Loyara fixes it (from the fact sheet), and invite them to book a free consultation.",
+    "poster": "compare",
+    "link": "contact",
+    "type": "sales"
+  },
+  "linkedin_blog": null,
+  "post": {
+    "threads_text": "Your posts look good. But they never tell people what to do next.\n\nA cafe in Anna Nagar posts a lovely reel of its new coffee.\nNo timing. No location. No \"order on WhatsApp\".\nSo people like it and keep scrolling.\n\nEvery post needs one job: visit, book, message or order.\nThat's where enquiries actually start.\n\nWant us to look at your page and plan this properly? Book a free consultation, link in the reply.",
+    "threads_reply": "Book a free consultation with Loyara here:",
+    "topic_tag": "Small Business",
+    "poster": {
+      "layout": "hook",
+      "eyebrow": "Social media",
+      "headline": "Nice post. Now what?",
+      "subline": "Give every post one clear next step",
+      "visual": "phone",
+      "items": [],
+      "icons": [],
+      "left_label": "",
+      "left_text": "",
+      "right_label": "",
+      "right_text": "",
+      "price": "",
+      "cta": "Book a free consultation"
+    },
+    "linkedin_text": "Brand identity for small business is not about a fancy logo.\nIt's about your Instagram, your shop board and your ads not looking like three different businesses.\n\nHere's how it usually happens.\nThe logo was made in a hurry years ago. The posts use whatever colours look nice that week. The ad uses a different font again.\n\nSo a customer sees your reel, then sees your ad, and doesn't even connect the two.\nYou're paying for attention, but it's not adding up to one name people remember.\n\nAt Loyara, we fix this in two simple ways:\n→ Logo design (₹2,999) if you need a clean, proper logo\n→ Brand identity kit (₹9,999) with your colours, fonts and how to use them\n\nAfter that, every reel, post, story and ad we make follows the same kit. So your feed, ads and shop finally look like one brand.\n\nWho is this for?\nA business that's growing but still looks \"homemade\" online. Or one that's about to spend on content or Meta Ads and wants it to actually stick.\n\nGetting your brand identity right first is cheaper than paying for ads people forget.\n\nQuick question: do your logo, colours and fonts match everywhere right now? Yes or no?\n\nIf it's a no, tell me what you're working on. Let's talk.\n\n#Branding #SmallBusiness #ChennaiBusiness",
+    "linkedin_comment": "Book a free consultation with us here:",
+    "linkedin_keyword": "brand identity for small business",
+    "linkedin_poster": {
+      "layout": "compare",
+      "eyebrow": "Branding",
+      "headline": "Does your business look like one brand?",
+      "subline": "",
+      "visual": "",
+      "items": [],
+      "icons": [],
+      "left_label": "Without a brand kit",
+      "left_text": "Different colours, fonts and logos everywhere",
+      "right_label": "With a brand kit",
+      "right_text": "Feed, ads and shop look the same",
+      "price": "",
+      "cta": "Book a free consultation"
+    }
+  },
+  "poster": "posters/20261124-morning.png",
+  "threads_link": "https://loyaraagency.com/contact/?utm_source=threads&utm_medium=social&utm_campaign=pain_point&utm_content=20261124-morning",
+  "linkedin_poster": "posters/20261124-morning-linkedin.png",
+  "linkedin_link": "https://loyaraagency.com/contact/?utm_source=linkedin&utm_medium=social&utm_campaign=li_problem&utm_content=20261124-morning",
+  "created_at": "2026-11-24T08:40:27.562358+05:30"
+}
