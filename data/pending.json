@@ -1,0 +1,115 @@
+{
+  "key": "20261125-morning",
+  "slot": "morning",
+  "pillar": "website",
+  "blog": null,
+  "linkedin_due": true,
+  "linkedin_angle": {
+    "id": "li_ai",
+    "label": "AI in marketing, explained",
+    "poster": "list",
+    "link": "contact",
+    "brief": "Explain, in plain words, how a small business can use AI in its marketing today (e.g. drafting captions, research, ad targeting ideas), and where a human still matters. Only describe well-known, general capabilities; do not claim specific new launches, features, prices or dates unless they appear in the website or blog content in this brief. No pitch.",
+    "type": "education"
+  },
+  "linkedin_blog": null,
+  "post": {
+    "threads_text": "Nobody fills a 9-field contact form on their phone.\n\nThink about a dentist in Dubai or a clinic in Velachery. Someone is ready to book. Then the site asks for name, email, phone, address, budget, message...\n\nSo they close the tab.\n\nMake saying yes easy:\n→ one clear \"Book now\" button on the first screen\n→ a short form: name and number, that's it\n→ a WhatsApp button for people who'd rather chat\n\nWant us to look at your site? Book a free consultation (link in the reply).",
+    "threads_reply": "Book a free consultation here:",
+    "topic_tag": "Web Design",
+    "poster": {
+      "layout": "list",
+      "eyebrow": "Websites",
+      "headline": "Make enquiring on your site easy",
+      "subline": "",
+      "visual": "website",
+      "items": [
+        "One clear Book now button",
+        "Short form: name, number",
+        "WhatsApp chat button"
+      ],
+      "icons": [
+        "website",
+        "check",
+        "whatsapp"
+      ],
+      "left_label": "",
+      "left_text": "",
+      "right_label": "",
+      "right_text": "",
+      "price": "",
+      "cta": "Book a free consultation"
+    },
+    "linkedin_text": "Using AI tools for marketing? Treat every answer as a first draft, not the final post.\nThat one habit decides if your content sounds like you or like everyone else.\n\nAt Loyara, we use AI tools for research and ad targeting ideas, and a creative team for everything the customer actually sees. Here's how I'd split the work for a small business:\n\n1. Research → let AI do the digging\nAsk it what questions customers have about your service. A bakery in Anna Nagar can get a list of content ideas in minutes.\n\n2. Captions → AI drafts, you rewrite\nKeep the structure. Then add what only you know: your street, your offer, your actual customer.\n\n3. Ad audiences → AI suggests, you check\nIt can list audiences to test. But you know who actually walks in.\n\n4. The final call → always a human\nTone, trust, what feels right for your brand. The tool doesn't know your customers. You do.\n\nSo the simple rule: AI tools for marketing save you time on the slow work. The judgement stays with you.\n\nSwipe through the 4 steps 👇\n\nWhich one would save you the most time: 1, 2, 3 or 4?\n\n#DigitalMarketing #AIMarketing #SmallBusiness",
+    "linkedin_comment": "If you want help using this in your own marketing, book a free consultation:",
+    "linkedin_keyword": "ai tools for marketing",
+    "linkedin_poster": {
+      "layout": "list",
+      "eyebrow": "AI marketing",
+      "headline": "4 steps: AI tools for marketing",
+      "subline": "",
+      "visual": "",
+      "items": [
+        "Research",
+        "Draft captions",
+        "Ad audience ideas",
+        "Human final call"
+      ],
+      "icons": [
+        "search",
+        "ai",
+        "target",
+        "users"
+      ],
+      "left_label": "",
+      "left_text": "",
+      "right_label": "",
+      "right_text": "",
+      "price": "",
+      "cta": "Swipe the steps"
+    },
+    "linkedin_carousel": {
+      "title": "AI Tools for Marketing: 4 Steps for Small Business",
+      "slides": [
+        {
+          "heading": "The problem: AI posts all sound the same",
+          "body": "Copy-paste AI captions read like everyone else's. So customers scroll past, because nothing sounds like your business.",
+          "icon": "ai",
+          "visual": "phone"
+        },
+        {
+          "heading": "Step 1: Let AI do the research",
+          "body": "Ask what your customers search for and ask about. Turn the answers into a month of content ideas.",
+          "icon": "search",
+          "visual": "calendar"
+        },
+        {
+          "heading": "Step 2: AI drafts, you rewrite",
+          "body": "Keep the structure. Add what only you know: your street, your offer, your real customer.",
+          "icon": "bulb",
+          "visual": "phone"
+        },
+        {
+          "heading": "Step 3: AI suggests audiences, you check",
+          "body": "Ask for ad audience ideas to test. Then cut anyone who would never actually visit you.",
+          "icon": "target",
+          "visual": ""
+        },
+        {
+          "heading": "Step 4: A human makes the final call",
+          "body": "Tone, trust and what fits your brand. That judgement stays with you, not the tool.",
+          "icon": "users",
+          "visual": ""
+        }
+      ],
+      "closing_heading": "AI drafts. You decide.",
+      "closing_body": "Use AI for the slow work and keep the judgement human. Want help setting this up? Let's talk."
+    }
+  },
+  "poster": "posters/20261125-morning.png",
+  "threads_link": "https://loyaraagency.com/contact/?utm_source=threads&utm_medium=social&utm_campaign=website&utm_content=20261125-morning",
+  "linkedin_poster": "posters/20261125-morning-linkedin.png",
+  "linkedin_pdf": "posters/20261125-morning-linkedin.pdf",
+  "linkedin_link": "https://loyaraagency.com/contact/?utm_source=linkedin&utm_medium=social&utm_campaign=li_ai&utm_content=20261125-morning",
+  "created_at": "2026-11-25T08:40:22.709974+05:30"
+}
