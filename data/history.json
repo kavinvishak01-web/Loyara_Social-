@@ -225,5 +225,24 @@
     "linkedin_blog_url": null,
     "linkedin_hook": "Brand identity for small business is not about a fancy logo.",
     "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
+  },
+  {
+    "key": "20261125-morning",
+    "slot": "morning",
+    "pillar": "website",
+    "text": "Nobody fills a 9-field contact form on their phone.\n\nThink about a dentist in Dubai or a clinic in Velachery. Someone is ready to book. Then the site asks for name, email, phone, address, budget, message...\n\nSo they close the tab.\n\nMake saying yes easy:\n→ one clear \"Book now\" button on the first screen\n→ a short form: name and number, that's it\n→ a WhatsApp button for people who'd rather chat\n\nWant us to look at your site? Book a free consultation (link in the reply).",
+    "headline": "Make enquiring on your site easy",
+    "poster": "posters/20261125-morning.png",
+    "blog_url": null,
+    "posted_at": "2026-11-25T08:41:17.441271+05:30",
+    "metrics": {},
+    "linkedin_format": "carousel",
+    "linkedin_keyword": "ai tools for marketing",
+    "linkedin_urn": "urn:li:ugcPost:7531192769151651840",
+    "linkedin_angle": "li_ai",
+    "linkedin_type": "education",
+    "linkedin_blog_url": null,
+    "linkedin_hook": "Using AI tools for marketing? Treat every answer as a first draft, not the final post.",
+    "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
   }
 ]
