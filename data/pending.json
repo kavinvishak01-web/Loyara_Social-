@@ -1,0 +1,75 @@
+{
+  "key": "20261126-morning",
+  "slot": "morning",
+  "pillar": "mistakes",
+  "blog": null,
+  "linkedin_due": true,
+  "linkedin_angle": {
+    "id": "li_service",
+    "label": "Service spotlight",
+    "brief": "Spotlight ONE service or package (rotate: Growth plan, Elite plan, Starter plan, websites, Meta Ads, brand identity). Say exactly what's included, who it's for and the result it's built for, with the price from the fact sheet (no INR prices for websites aimed at international readers). Close with a clear call to book.",
+    "poster": "offer",
+    "link": "packages",
+    "type": "sales"
+  },
+  "linkedin_blog": null,
+  "post": {
+    "threads_text": "Someone messaged you at 8pm. You replied the next afternoon.\n\nBy then they booked the place that answered first.\n\nThis is where a lot of leads quietly go:\n→ replying to DMs a day late\n→ \"call us for details\" instead of just sharing the price\n→ no follow-up after the first reply\n\nThe marketing did its job. The enquiry still slipped.\n\nWant to see where your enquiries are dropping off? Book a free consultation (link in the reply).",
+    "threads_reply": "Book a free consultation with Loyara here:",
+    "topic_tag": "Small Business",
+    "poster": {
+      "layout": "list",
+      "eyebrow": "Lost leads",
+      "headline": "Where your enquiries quietly go",
+      "subline": "",
+      "visual": "",
+      "items": [
+        "Replying a day late",
+        "\"Call us for details\"",
+        "No follow-up message"
+      ],
+      "icons": [
+        "clock",
+        "phone",
+        "chat"
+      ],
+      "left_label": "",
+      "left_text": "",
+      "right_label": "",
+      "right_text": "",
+      "price": "",
+      "cta": "Book a free consultation"
+    },
+    "linkedin_text": "Looking for a Meta Ads agency in Chennai? First check how the campaign is set up.\n\nBecause most wasted ad money comes from a weak setup, not a small budget.\n\nA lot of business owners press \"Boost\" on a nice post, pick an audience, and hope. Then they get likes, a few profile visits, and no enquiries. So they decide ads don't work for them.\n\nActually, the ad just wasn't built to bring enquiries in the first place.\n\nThat's where our Meta Ads setup comes in. At Loyara, it's a one-time ₹2,999 and we set up your Facebook and Instagram campaigns to bring enquiries, not just reach.\n\nIf you want us to keep running it every month, Meta Ads management is included in our Growth plan (₹19,999/month). That comes with 8 professional reels shot at your business, 2 content days, 2 motion posters, 2 carousels, a monthly performance report and 2 strategy calls.\n\nOne honest note: the ad spend is paid by you directly to Meta.\n\nWho is this for?\n→ Local businesses in Chennai who want more enquiries, not more likes\n→ Brands anywhere who already have good content but no real ad plan\n\nIf you're searching for a Meta Ads agency in Chennai, start with a free consultation. We'll look at your business and tell you honestly if ads make sense right now.\n\nQuick question: have you tried boosting posts before, yes or no?\n\n#DigitalMarketing #MetaAds #ChennaiBusiness",
+    "linkedin_comment": "Book a free consultation with Loyara here:",
+    "linkedin_keyword": "meta ads agency in chennai",
+    "linkedin_poster": {
+      "layout": "offer",
+      "eyebrow": "Meta Ads",
+      "headline": "Ads built for enquiries, not likes",
+      "subline": "",
+      "visual": "",
+      "items": [
+        "Facebook & Instagram setup",
+        "Aimed at the right audience",
+        "Monthly report on Growth"
+      ],
+      "icons": [
+        "megaphone",
+        "target",
+        "chart"
+      ],
+      "left_label": "",
+      "left_text": "",
+      "right_label": "",
+      "right_text": "",
+      "price": "₹2,999",
+      "cta": "Book a free consultation"
+    }
+  },
+  "poster": "posters/20261126-morning.png",
+  "threads_link": "https://loyaraagency.com/contact/?utm_source=threads&utm_medium=social&utm_campaign=mistakes&utm_content=20261126-morning",
+  "linkedin_poster": "posters/20261126-morning-linkedin.png",
+  "linkedin_link": "https://loyaraagency.com/packages/?utm_source=linkedin&utm_medium=social&utm_campaign=li_service&utm_content=20261126-morning",
+  "created_at": "2026-11-26T08:40:03.248891+05:30"
+}
