@@ -244,5 +244,24 @@
     "linkedin_blog_url": null,
     "linkedin_hook": "Using AI tools for marketing? Treat every answer as a first draft, not the final post.",
     "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
+  },
+  {
+    "key": "20261126-morning",
+    "slot": "morning",
+    "pillar": "mistakes",
+    "text": "Someone messaged you at 8pm. You replied the next afternoon.\n\nBy then they booked the place that answered first.\n\nThis is where a lot of leads quietly go:\n→ replying to DMs a day late\n→ \"call us for details\" instead of just sharing the price\n→ no follow-up after the first reply\n\nThe marketing did its job. The enquiry still slipped.\n\nWant to see where your enquiries are dropping off? Book a free consultation (link in the reply).",
+    "headline": "Where your enquiries quietly go",
+    "poster": "posters/20261126-morning.png",
+    "blog_url": null,
+    "posted_at": "2026-11-26T08:40:48.400060+05:30",
+    "metrics": {},
+    "linkedin_format": "image",
+    "linkedin_keyword": "meta ads agency in chennai",
+    "linkedin_urn": "urn:li:share:7531555033260269570",
+    "linkedin_angle": "li_service",
+    "linkedin_type": "sales",
+    "linkedin_blog_url": null,
+    "linkedin_hook": "Looking for a Meta Ads agency in Chennai? First check how the campaign is set up.",
+    "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
   }
 ]
