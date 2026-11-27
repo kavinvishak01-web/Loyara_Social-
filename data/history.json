@@ -263,5 +263,24 @@
     "linkedin_blog_url": null,
     "linkedin_hook": "Looking for a Meta Ads agency in Chennai? First check how the campaign is set up.",
     "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
+  },
+  {
+    "key": "20261127-morning",
+    "slot": "morning",
+    "pillar": "meta_ads",
+    "text": "Your Meta ad looks like a flyer. People scroll past flyers.\n\nA designed poster with \"20% OFF\" in big letters gets a quick look and nothing else.\n\nA short reel shot at your actual shop works differently. People see the place, the people, the food. So they already know what they're walking into before they message you.\n\nThat's why we make ad creatives from the content we shoot at your business.\n\nWant ads that bring enquiries? Book a free consultation, link in the reply.",
+    "headline": "Your ad looks like a flyer",
+    "poster": "posters/20261127-morning.png",
+    "blog_url": null,
+    "posted_at": "2026-11-27T08:41:23.952287+05:30",
+    "metrics": {},
+    "linkedin_format": "carousel",
+    "linkedin_keyword": "how to get more google reviews",
+    "linkedin_urn": "urn:li:ugcPost:7531917569990082560",
+    "linkedin_angle": "li_blog",
+    "linkedin_type": "education",
+    "linkedin_blog_url": "https://loyaraagency.com/blog/get-google-reviews-business/",
+    "linkedin_hook": "How to get more Google reviews? Make it easy, and ask at the right moment.",
+    "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
   }
 ]
