@@ -1,0 +1,69 @@
+{
+  "key": "20261128-morning",
+  "slot": "morning",
+  "pillar": "myth",
+  "blog": null,
+  "linkedin_due": true,
+  "linkedin_angle": {
+    "id": "li_process",
+    "label": "How we work / trust",
+    "brief": "Remove the fear of hiring an agency: show how Loyara works (free consultation, approved calendar, content days, reporting, 50/50 payment) and why that protects the client. End with a direct invitation to book a free consultation or DM.",
+    "poster": "steps",
+    "link": "contact",
+    "type": "sales"
+  },
+  "linkedin_blog": null,
+  "post": {
+    "threads_text": "Myth: your reel has to go viral to bring customers.\n\nA viral reel reaches people all over India. But a salon in Anna Nagar only needs people who can walk in this week.\n\nSo a few thousand views from your own area can do more than a few lakh from everywhere.\n\nFact: show the right local people what you do, every week, and tell them how to book.\n\nWant a plan like that for your business? Book a free consultation (link in the reply).",
+    "threads_reply": "Book a free consultation with Loyara here:",
+    "topic_tag": "Small Business",
+    "poster": {
+      "layout": "compare",
+      "eyebrow": "Myth vs fact",
+      "headline": "Viral reels don't fill your shop",
+      "subline": "",
+      "visual": "",
+      "items": [],
+      "icons": [],
+      "left_label": "Myth",
+      "left_text": "Go viral across India",
+      "right_label": "Fact",
+      "right_text": "Reach people near your shop, weekly",
+      "price": "",
+      "cta": "Book a free consultation"
+    },
+    "linkedin_text": "Thinking of hiring a social media agency in Chennai, but scared you'll pay and get nothing you can check?\n\nThat fear makes sense. So here's exactly how we work at Loyara, step by step.\n\nMost business owners I talk to are not worried about the price. They're worried about not knowing what happens after they pay.\n\nSo we built our process around that:\n\n1. Free consultation. We learn your business, your audience and your goals, then recommend a package. No payment for this.\n\n2. You approve the calendar. Every month you see the full content calendar before we shoot anything.\n\n3. Content day. We book shoot days in advance and film the reels, posts and designs at your business.\n\n4. Publish and review. We caption, schedule and, on Growth and Elite, run your Meta Ads. Then we go through the results on your strategy calls.\n\nAnd payment is 50% before the month's work begins, 50% before final delivery. So you're never paying for a full month you haven't seen.\n\nFor example, our Growth package is ₹19,999/month: 8 reels, 2 content days, 4 static posts, 2 motion posters, 2 carousels, Meta Ads management and a monthly performance report.\n\nIt's for Chennai businesses that want a social media agency they can actually keep track of.\n\nWhich step matters most to you before you hire anyone: 1, 2, 3 or 4?\n\nLet's talk.\n\n#DigitalMarketing #SocialMediaMarketing #ChennaiBusiness",
+    "linkedin_comment": "Book a free consultation with us here:",
+    "linkedin_keyword": "social media agency in chennai",
+    "linkedin_poster": {
+      "layout": "steps",
+      "eyebrow": "How we work",
+      "headline": "Hire an agency you can check",
+      "subline": "50% advance, 50% before final delivery",
+      "visual": "",
+      "items": [
+        "Free consultation",
+        "You approve the calendar",
+        "Content day at your shop",
+        "Publish and review"
+      ],
+      "icons": [
+        "chat",
+        "calendar",
+        "camera",
+        "chart"
+      ],
+      "left_label": "",
+      "left_text": "",
+      "right_label": "",
+      "right_text": "",
+      "price": "",
+      "cta": "Book a free consultation"
+    }
+  },
+  "poster": "posters/20261128-morning.png",
+  "threads_link": "https://loyaraagency.com/contact/?utm_source=threads&utm_medium=social&utm_campaign=myth&utm_content=20261128-morning",
+  "linkedin_poster": "posters/20261128-morning-linkedin.png",
+  "linkedin_link": "https://loyaraagency.com/contact/?utm_source=linkedin&utm_medium=social&utm_campaign=li_process&utm_content=20261128-morning",
+  "created_at": "2026-11-28T08:40:26.689583+05:30"
+}
