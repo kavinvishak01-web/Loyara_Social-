@@ -282,5 +282,24 @@
     "linkedin_blog_url": "https://loyaraagency.com/blog/get-google-reviews-business/",
     "linkedin_hook": "How to get more Google reviews? Make it easy, and ask at the right moment.",
     "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
+  },
+  {
+    "key": "20261128-morning",
+    "slot": "morning",
+    "pillar": "myth",
+    "text": "Myth: your reel has to go viral to bring customers.\n\nA viral reel reaches people all over India. But a salon in Anna Nagar only needs people who can walk in this week.\n\nSo a few thousand views from your own area can do more than a few lakh from everywhere.\n\nFact: show the right local people what you do, every week, and tell them how to book.\n\nWant a plan like that for your business? Book a free consultation (link in the reply).",
+    "headline": "Viral reels don't fill your shop",
+    "poster": "posters/20261128-morning.png",
+    "blog_url": null,
+    "posted_at": "2026-11-28T08:41:03.154212+05:30",
+    "metrics": {},
+    "linkedin_format": "image",
+    "linkedin_keyword": "social media agency in chennai",
+    "linkedin_urn": "urn:li:share:7532279870354079744",
+    "linkedin_angle": "li_process",
+    "linkedin_type": "sales",
+    "linkedin_blog_url": null,
+    "linkedin_hook": "Thinking of hiring a social media agency in Chennai, but scared you'll pay and get nothing you can check?",
+    "linkedin_comment_error": "comment failed (403): {\"status\":403,\"serviceErrorCode\":100,\"code\":\"ACCESS_DENIED\",\"message\":\"Not enough permissions to access: partnerApiSocialActions.CREATE.20261001\"}"
   }
 ]
